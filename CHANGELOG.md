@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/ivandevI9/portafolio-web-v2/compare/v1.2.0...v1.3.0) (2024-11-19)
+
+
+### Features
+
+* **footer:** agrega estilos, información y tecnologías usadas ([8d4bbe5](https://github.com/ivandevI9/portafolio-web-v2/commit/8d4bbe5031569c9a9383402c4c3fab6179b7fa31))
+
 # [1.2.0](https://github.com/ivandevI9/portafolio-web-v2/compare/v1.1.0...v1.2.0) (2024-11-19)
 
 
