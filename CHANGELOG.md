@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/ivandevI9/portafolio-web-v2/compare/v1.0.0...v1.1.0) (2024-11-19)
+
+
+### Features
+
+* agrega estructura básica para la página web ([2ebab46](https://github.com/ivandevI9/portafolio-web-v2/commit/2ebab46c6ca780b8ad7d519f055980f9f51a81f8))
+
 # 1.0.0 (2024-11-19)
 
 
