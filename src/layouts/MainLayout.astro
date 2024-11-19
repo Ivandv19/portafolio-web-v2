@@ -1,14 +1,15 @@
 ---
 // Aquí puedes definir variables, recibir props, o usar algún componente
 const { title, children } = Astro.props;
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logomain.gif" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
   </head>

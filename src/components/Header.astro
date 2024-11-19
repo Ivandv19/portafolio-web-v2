@@ -1,0 +1,40 @@
+--- 
+const title = "Mi Portafolio";
+---
+
+<header class="bg-black text-white p-2 w-full text-sm">
+  <div class="flex justify-center items-center w-full">
+    <div class="grid grid-cols-[1fr,2fr,1fr] w-full">
+      <!-- Primera columna (Título) -->
+      <div class="flex justify-center items-center">
+        <picture  >
+          <!-- Si el navegador soporta WebP, usará esta imagen -->
+          <source srcset="/logo.webp" type="image/webp" class="w-[80px] h-[80px]">
+          
+          <!-- Si no soporta WebP, usará esta imagen JPG -->
+          <img src="/logo.png" alt="Logo" loading="lazy" class="w-[80px] h-[80px]" />
+        </picture>
+        <a href="/" class="hover:text-gray-400" aria-label="Ir al inicio">{title}</a>
+      </div>
+
+      <!-- Segunda columna (Navegación) -->
+      <div class="flex justify-center items-center">
+        <nav aria-label="Navegación principal" role="navigation">
+          <ul class="flex justify-center items-center gap-2">
+            <li><a href="/about" class="hover:text-gray-400" aria-label="Ver más sobre mí">Sobre mí</a></li>
+            <li><a href="/skills" class="hover:text-gray-400" aria-label="Ver mis habilidades">Skills</a></li>
+            <li><a href="/hobbies" class="hover:text-gray-400" aria-label="Ver mis hobbies">Hobbies</a></li>
+            <li><a href="/formacion" class="hover:text-gray-400" aria-label="Ver mi formación">Formación</a></li>
+            <li><a href="/experiencia" class="hover:text-gray-400" aria-label="Ver mi experiencia">Experiencia</a></li>
+            <li><a href="/proyectos" class="hover:text-gray-400" aria-label="Ver mis proyectos">Proyectos</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Tercera columna (Contacto) -->
+      <div class="flex justify-center items-center">
+        <a href="/contacto" class="hover:text-gray-400" aria-label="Contactar conmigo">Contáctame</a>
+      </div>
+    </div>
+  </div>
+</header>
