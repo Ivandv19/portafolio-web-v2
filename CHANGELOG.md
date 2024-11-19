@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/ivandevI9/portafolio-web-v2/compare/v1.1.0...v1.2.0) (2024-11-19)
+
+
+### Features
+
+* **header:** añade estilos y barra de navegación ([e11507f](https://github.com/ivandevI9/portafolio-web-v2/commit/e11507f7de1d99c8faf3380ee8e1ab26b01b3c4f))
+
 # [1.1.0](https://github.com/ivandevI9/portafolio-web-v2/compare/v1.0.0...v1.1.0) (2024-11-19)
 
 
