@@ -1,0 +1,23 @@
+---
+// Aquí puedes definir variables, recibir props, o usar algún componente
+const { title, children } = Astro.props;
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+---
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+  </head>
+  <body>
+	<Header/>
+    <main>
+      <slot />
+    </main>
+	<Footer/>
+
+  </body>
+</html>
