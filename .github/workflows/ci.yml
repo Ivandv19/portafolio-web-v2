@@ -19,11 +19,11 @@ jobs:
 
       - name: Install pnpm globally
         run: |
-          npm install -g pnpm  # Instala pnpm globalmente
+          npm install -g pnpm
 
       - name: Install dependencies
         run: |
-          pnpm install  # Instala las dependencias usando pnpm
+          pnpm install
 
       - name: Run tests
         run: |
@@ -31,7 +31,7 @@ jobs:
 
   semantic-release:
     runs-on: ubuntu-latest
-    needs: tests  # Asegura que el trabajo de pruebas se ejecute antes de hacer el release
+    needs: tests
 
     permissions:
       contents: write
@@ -49,11 +49,11 @@ jobs:
 
       - name: Install pnpm globally
         run: |
-          npm install -g pnpm  # Instala pnpm globalmente
+          npm install -g pnpm
 
       - name: Install dependencies
         run: |
-          pnpm install  # Instala las dependencias usando pnpm
+          pnpm install
           
       - name: Crear archivo de credenciales JSON vacío
         run: |
@@ -80,8 +80,8 @@ jobs:
 
       - name: Fetch secrets from Google Secret Manager
         run: |
-          SECRET_GH_TOKEN=$(gcloud secrets versions access latest --secret="GH_TOKEN")
-          SECRET_NPM_TOKEN=$(gcloud secrets versions access latest --secret="NPM_TOKEN")
+          SECRET_GH_TOKEN=$(gcloud secrets versions access latest --secret="GH_TOKEN" --project="${{ secrets.GCLOUD_PROJECT_ID }}")
+          SECRET_NPM_TOKEN=$(gcloud secrets versions access latest --secret="NPM_TOKEN" --project="${{ secrets.GCLOUD_PROJECT_ID }}")
           echo "GH_TOKEN=$SECRET_GH_TOKEN" >> $GITHUB_ENV
           echo "NPM_TOKEN=$SECRET_NPM_TOKEN" >> $GITHUB_ENV
 
