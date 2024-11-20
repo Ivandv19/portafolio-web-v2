@@ -55,10 +55,10 @@ jobs:
         run: |
           pnpm install  # Instala las dependencias usando pnpm
 
-      # Paso 1: Crear el archivo JSON con las credenciales
+      # Paso 1: Crear archivo de credenciales JSON
       - name: Crear archivo de credenciales JSON
         run: |
-          printf "%s" "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}" > /tmp/credentials.json
+          echo "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}" > /tmp/credentials.json
         env:
           GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
 
@@ -66,7 +66,7 @@ jobs:
       - name: Autenticar con Google Cloud
         run: |
           gcloud auth activate-service-account --key-file /tmp/credentials.json
-          
+
       # Paso 3: Instalar el SDK de Google Cloud (si es necesario)
       - name: Install Google Cloud SDK (if needed)
         run: |
