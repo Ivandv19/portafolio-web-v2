@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/ivandevI9/portafolio-web-v2/compare/v1.3.0...v1.4.0) (2024-11-20)
+
+
+### Features
+
+* **index:** agrega información y elementos ([ece64bc](https://github.com/ivandevI9/portafolio-web-v2/commit/ece64bc52d35c6c29b89fd9456c2566208cef55f))
+
 # [1.3.0](https://github.com/ivandevI9/portafolio-web-v2/compare/v1.2.0...v1.3.0) (2024-11-19)
 
 
