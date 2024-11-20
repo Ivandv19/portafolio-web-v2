@@ -4,7 +4,7 @@ module.exports = {
     { name: 'develop', prerelease: true },
     { name: 'next', channel: 'beta', prerelease: 'beta' },
   ],
-  repositoryUrl: "https://github.com/ivandevI9/portafolio-web-v2.git",
+  repositoryUrl: "https://github.com/Ivandv19/portafolio-web-v2.git",
   plugins: [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
