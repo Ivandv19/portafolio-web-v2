@@ -72,6 +72,10 @@ jobs:
         run: |
           gcloud auth activate-service-account --key-file /tmp/credentials.json
 
+      - name: Configurar el proyecto de Google Cloud
+        run: |
+          gcloud config set project $(gcloud config get-value project)
+        
       - name: Install Google Cloud SDK (if needed)
         run: |
           curl https://sdk.cloud.google.com | bash
@@ -80,8 +84,8 @@ jobs:
 
       - name: Fetch secrets from Google Secret Manager
         run: |
-          SECRET_GH_TOKEN=$(gcloud secrets versions access latest --secret="GH_TOKEN" --project="${{ secrets.GCLOUD_PROJECT_ID }}")
-          SECRET_NPM_TOKEN=$(gcloud secrets versions access latest --secret="NPM_TOKEN" --project="${{ secrets.GCLOUD_PROJECT_ID }}")
+          SECRET_GH_TOKEN=$(gcloud secrets versions access latest --secret="GH_TOKEN")
+          SECRET_NPM_TOKEN=$(gcloud secrets versions access latest --secret="NPM_TOKEN")
           echo "GH_TOKEN=$SECRET_GH_TOKEN" >> $GITHUB_ENV
           echo "NPM_TOKEN=$SECRET_NPM_TOKEN" >> $GITHUB_ENV
 
