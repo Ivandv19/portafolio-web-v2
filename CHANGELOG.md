@@ -1,3 +1,25 @@
+# [1.5.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.4.0...v1.5.0) (2024-11-20)
+
+
+### Bug Fixes
+
+* **ci:** arregla error de formato de json ([8e8b55f](https://github.com/Ivandv19/portafolio-web-v2/commit/8e8b55f7e43e25c34dceb998758cfd7ee1882bb5))
+* **ci:** arregla error de formato json ([e6e07ca](https://github.com/Ivandv19/portafolio-web-v2/commit/e6e07ca3deecd485b6c7c0a62b33f29fbd8ddde2))
+* **ci:** arregla error de formato json ([42c28dd](https://github.com/Ivandv19/portafolio-web-v2/commit/42c28dde084782976a61624601bfde45a6bd5abd))
+* **ci:** arregla error de formato json ([61ea995](https://github.com/Ivandv19/portafolio-web-v2/commit/61ea9957c123a0a87c5f83db67f32ae138c2bddb))
+* **ci:** arregla error de formato json ([b4bdfac](https://github.com/Ivandv19/portafolio-web-v2/commit/b4bdfaca37cc7fdaf70d5b8b573c072c426e84db))
+* **ci:** arregla formato de json ([8915edd](https://github.com/Ivandv19/portafolio-web-v2/commit/8915edd7b26c91adce1b4cf09ecf080924274e74))
+* **ci:** cambia formato de json ([5ac8738](https://github.com/Ivandv19/portafolio-web-v2/commit/5ac873871903252976899c06a9370d807e85a5d0))
+* **ci:** cambia la forma en que se crea el json temporal ([2361bb5](https://github.com/Ivandv19/portafolio-web-v2/commit/2361bb590f9a3dca6471e27b1088fd3e5d39abb3))
+* **ci:** configura id del proyecto ([ec031de](https://github.com/Ivandv19/portafolio-web-v2/commit/ec031deb128618c59d46127e58f790142d83676b))
+* **ci:** configura nombre del proyecto explicitamente ([4174da3](https://github.com/Ivandv19/portafolio-web-v2/commit/4174da39feca1dac9bdd417142d8d09493d0535c))
+* **ci:** configura proyecto en workflow ([2fec77c](https://github.com/Ivandv19/portafolio-web-v2/commit/2fec77c64bcb2633449dd37460c6d0762d091c4a))
+
+
+### Features
+
+* **ci:** agrega Google Secret Manager ([08dbd20](https://github.com/Ivandv19/portafolio-web-v2/commit/08dbd20b31b8b5d0d889a69a80fbca405c2ed21f))
+
 # [1.4.0](https://github.com/ivandevI9/portafolio-web-v2/compare/v1.3.0...v1.4.0) (2024-11-20)
 
 
