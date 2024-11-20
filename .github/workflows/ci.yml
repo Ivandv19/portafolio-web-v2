@@ -57,13 +57,11 @@ jobs:
           
       - name: Crear archivo de credenciales JSON vacío
         run: |
-          # Crear el archivo temporal vacío
           touch /tmp/credentials.json
 
-      - name: Asignar valor del secreto de Google Cloud al archivo
+      - name: Decodificar y asignar valor del secreto de Google Cloud al archivo
         run: |
-          # Usar echo con -e para permitir que los saltos de línea sean interpretados correctamente
-          echo "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}" > /tmp/credentials.json
+          echo "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}" | base64 --decode > /tmp/credentials.json
 
       - name: Mostrar contenido del archivo JSON de credenciales
         run: |
@@ -87,7 +85,6 @@ jobs:
           echo "GH_TOKEN=$SECRET_GH_TOKEN" >> $GITHUB_ENV
           echo "NPM_TOKEN=$SECRET_NPM_TOKEN" >> $GITHUB_ENV
 
-          
       - name: Run Semantic Release
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
