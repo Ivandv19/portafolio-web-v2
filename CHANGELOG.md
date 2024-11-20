@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.5.0...v1.6.0) (2024-11-20)
+
+
+### Features
+
+* **docs:** agrega badge de Netlify ([a577eac](https://github.com/Ivandv19/portafolio-web-v2/commit/a577eac90aa8ea7e9a214b213c84a60b1f2dc8a0))
+
 # [1.5.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.4.0...v1.5.0) (2024-11-20)
 
 
