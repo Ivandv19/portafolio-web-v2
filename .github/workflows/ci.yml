@@ -55,19 +55,26 @@ jobs:
         run: |
           pnpm install  # Instala las dependencias usando pnpm
 
-      - name: Authenticate with Google Cloud
+      # Paso 1: Crear el archivo JSON con las credenciales
+      - name: Crear archivo de credenciales JSON
         run: |
           printf "%s" "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}" > /tmp/credentials.json
-          gcloud auth activate-service-account --key-file /tmp/credentials.json
         env:
           GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
 
+      # Paso 2: Autenticar con Google Cloud
+      - name: Autenticar con Google Cloud
+        run: |
+          gcloud auth activate-service-account --key-file /tmp/credentials.json
+          
+      # Paso 3: Instalar el SDK de Google Cloud (si es necesario)
       - name: Install Google Cloud SDK (if needed)
         run: |
           curl https://sdk.cloud.google.com | bash
           source $HOME/google-cloud-sdk/path.bash.inc
         if: runner.os == 'Linux'
 
+      # Paso 4: Obtener secretos desde Google Secret Manager
       - name: Fetch secrets from Google Secret Manager
         run: |
           SECRET_GH_TOKEN=$(gcloud secrets versions access latest --secret="GH_TOKEN")
@@ -75,6 +82,7 @@ jobs:
           echo "GH_TOKEN=$SECRET_GH_TOKEN" >> $GITHUB_ENV
           echo "NPM_TOKEN=$SECRET_NPM_TOKEN" >> $GITHUB_ENV
 
+      # Paso 5: Ejecutar Semantic Release
       - name: Run Semantic Release
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
