@@ -63,11 +63,6 @@ jobs:
         run: |
           echo "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}" | base64 --decode > /tmp/credentials.json
 
-      - name: Mostrar contenido del archivo JSON de credenciales
-        run: |
-          # Imprimir el contenido del archivo para depuración (Solo para propósitos de prueba, no recomendado en producción)
-          cat /tmp/credentials.json
-
       - name: Autenticar con Google Cloud
         run: |
           gcloud auth activate-service-account --key-file /tmp/credentials.json
