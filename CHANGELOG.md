@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.7.0...v1.8.0) (2024-11-21)
+
+
+### Features
+
+* **sobre-mí:** agrega información sobre mi ([7978731](https://github.com/Ivandv19/portafolio-web-v2/commit/79787316a1d739c19a38c7154c3ef0462e791db9))
+
 # [1.7.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.6.0...v1.7.0) (2024-11-21)
 
 
