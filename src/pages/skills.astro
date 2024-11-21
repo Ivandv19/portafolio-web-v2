@@ -2,7 +2,692 @@
 const title = "Skills";
 import MainLayout from "../layouts/MainLayout.astro";
 ---
-<MainLayout title={title}>
-    <h2>¡Hola! Bienvenido a mi sitio web</h2>
-    <p>Este es el contenido principal de la página de inicio.</p>
-  </MainLayout>
+
+<MainLayout title="Skills">
+  <!-- Contenedor de la sección "Skills" -->
+  <section
+    id="skills"
+    class="py-20 bg-white text-center flex flex-col justify-center items-center gap-12"
+  >
+    <!-- Sección para habilidades técnicas -->
+    <div class="w-full flex flex-col justify-center items-center">
+      <h3 class="text-2xl font-semibold text-gray-700">Habilidades Técnicas</h3>
+      <div class="grid gap-8 mt-8 w-4/5 flex flex-col">
+        <!-- Frontend Básico -->
+        <section class="w-full">
+          <h4 class="text-lg font-semibold text-gray-600 mb-4">
+            Frontend Básico
+          </h4>
+          <div
+            class="grid gap-8 mt-4 w-full"
+            style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));"
+          >
+            <!-- HTML -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[flowbite--html-solid] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">HTML</p>
+            </div>
+
+            <!-- CSS -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[flowbite--css-solid] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">CSS</p>
+            </div>
+
+            <!-- JavaScript -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[lineicons--javascript] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">JavaScript</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Frameworks -->
+        <div class="w-full">
+          <h4 class="text-lg font-semibold text-gray-600 mb-4">Frameworks</h4>
+          <div
+            class="grid gap-8 mt-4 w-full"
+            style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));"
+          >
+            <!-- React -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[mdi--react] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">React</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bibliotecas de UI -->
+        <div class="w-full">
+          <h4 class="text-lg font-semibold text-gray-600 mb-4">
+            Bibliotecas de UI
+          </h4>
+          <div
+            class="grid gap-8 mt-4 w-full"
+            style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));"
+          >
+            <!-- Styled Components -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[simple-icons--styledcomponents] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">Styled Components</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Herramientas de Empaque y Construcción -->
+        <section class="w-full">
+          <h4 class="text-lg font-semibold text-gray-600 mb-4">
+            Herramientas de Empaque y Construcción
+          </h4>
+          <div
+            class="grid gap-8 mt-4 w-full"
+            style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));"
+          >
+            <!-- Vite -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[lineicons--vite] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">Vite</p>
+            </div>
+
+            <!-- npm -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[devicon-plain--npm] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">npm</p>
+            </div>
+
+            <!-- pnpm -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[lineicons--pnpm] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">pnpm</p>
+            </div>
+
+            <!-- Node.js -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[mdi--nodejs] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">Node.js</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Control de Versiones -->
+        <section class="w-full">
+          <h4 class="text-lg font-semibold text-gray-600 mb-4">
+            Control de Versiones
+          </h4>
+          <div
+            class="grid gap-8 mt-4 w-full"
+            style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));"
+          >
+            <!-- Git -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[simple-icons--git] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">Git</p>
+            </div>
+            <!-- GitHub -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[mdi--github] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">GitHub</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- APIs y Protocolos -->
+        <section class="w-full">
+          <h4 class="text-lg font-semibold text-gray-600 mb-4">
+            APIs y Protocolos
+          </h4>
+          <div
+            class="grid gap-8 mt-4 w-full"
+            style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));"
+          >
+            <!-- RESTful API -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[file-icons--swagger] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">RESTful API</p>
+            </div>
+
+            <!-- JSON -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[codicon--json] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">JSON</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Sección para habilidades técnicas en desarrollo -->
+    <div class="w-full flex flex-col justify-center items-center">
+      <h3 class="text-2xl font-semibold text-gray-700">
+        Habilidades Técnicas en desarrollo
+      </h3>
+      <div class="grid gap-8 mt-8 w-4/5 flex flex-col">
+        <!-- Frameworks -->
+        <section class="w-full mt-8">
+          <h4 class="text-lg font-semibold text-gray-600 mb-4">Frameworks</h4>
+          <div
+            class="grid gap-8 mt-4 w-full"
+            style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));"
+          >
+            <!-- Astro -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[devicon-plain--astro] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">Astro</p>
+            </div>
+
+            <!-- Next.js -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[simple-icons--nextdotjs] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">Next.js</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- UI Tools -->
+        <section class="w-full mt-8">
+          <h4 class="text-lg font-semibold text-gray-600 mb-4">UI Tools</h4>
+          <div
+            class="grid gap-8 mt-4 w-full"
+            style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));"
+          >
+            <!-- Tailwind CSS -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[ri--tailwind-css-fill] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">Tailwind CSS</p>
+            </div>
+
+            <!-- Redux -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[file-icons--redux] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">Redux</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- CI/CD -->
+        <section class="w-full mt-8">
+          <h4 class="text-lg font-semibold text-gray-600 mb-4">CI/CD</h4>
+          <div
+            class="grid gap-8 mt-4 w-full"
+            style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));"
+          >
+            <!-- CI/CD Icon -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[logos--github-actions] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">Github Actions</p>
+            </div>
+
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[file-icons--jenkins] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">Jenkins</p>
+            </div>
+
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[catppuccin--semantic-release] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">Semantic Release</p>
+            </div>
+
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[simple-icons--conventionalcommits] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">
+                Conventional Commits
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Testing -->
+        <section class="w-full mt-8">
+          <h4 class="text-lg font-semibold text-gray-600 mb-4">
+            Testing (Pruebas)
+          </h4>
+          <div
+            class="grid gap-8 mt-4 w-full"
+            style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));"
+          >
+            <!-- Testing Icon -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[file-icons--jest] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">Jest</p>
+            </div>
+
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[logos--react-styleguidist] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">
+                React Testing Library
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Cloud Computing -->
+        <section class="w-full mt-8">
+          <h4 class="text-lg font-semibold text-gray-600 mb-4">
+            Cloud Computing
+          </h4>
+          <div
+            class="grid gap-8 mt-4 w-full"
+            style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));"
+          >
+            <!-- OCI -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[arcticons--oci-mobile] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">
+                OCI (Oracle Cloud Infrastructure)
+              </p>
+            </div>
+
+            <!-- Google Cloud -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[mdi--google-cloud] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">Google Cloud</p>
+              <ul class="text-gray-600">
+                <li>- Firebase</li>
+              </ul>
+            </div>
+
+            <!-- AWS -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[mdi--aws] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">AWS</p>
+            </div>
+
+            <!-- Azure -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[codicon--azure] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">Azure</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Categoría de Accesibilidad Web (a11y) -->
+        <section class="w-full">
+          <h4 class="text-lg font-semibold text-gray-600 mb-4">
+            Accesibilidad Web (a11y)
+          </h4>
+          <div
+            class="grid gap-8 mt-4 w-full"
+            style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));"
+          >
+            <!-- Accesibilidad -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[solar--accessibility-linear] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">WCAG</p>
+            </div>
+
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[fluent-mdl2--accessibilty-checker] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">ARIA</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Sección para habilidades blandas -->
+    <div class="w-full flex flex-col justify-center items-center">
+      <h3 class="text-2xl font-semibold text-gray-700">Habilidades Blandas</h3>
+      <div class="grid gap-8 mt-8 w-4/5 flex flex-col">
+        <section class="w-full mt-8">
+          <div
+            class="grid gap-8 mt-4 w-full"
+            style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));"
+          >
+            <!-- Comunicación efectiva -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[material-symbols--communication] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">
+                Comunicación efectiva
+              </p>
+            </div>
+
+            <!-- Trabajo en equipo -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[fluent-mdl2--teamwork] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">Trabajo en equipo</p>
+            </div>
+
+            <!-- Resolución de problemas -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[arcticons--enoceantool] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">
+                Resolución de problemas
+              </p>
+            </div>
+
+            <!-- Creatividad -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[hugeicons--ai-innovation-03] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">Creatividad</p>
+            </div>
+            <!-- Aprendizaje activo -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[iconoir--learning] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">Aprendizaje activo</p>
+            </div>
+
+            <!-- Adaptabilidad -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[carbon--ibm-cloud-resiliency] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">Adaptabilidad</p>
+            </div>
+
+            <!-- Organización -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[lucide--trello] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">Organización</p>
+            </div>
+
+            <!-- Pensamiento crítico -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[icon-park-outline--thinking-problem] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">Pensamiento crítico</p>
+            </div>
+
+            <!-- Gestión del tiempo -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[hugeicons--time-management] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">Gestión del tiempo</p>
+            </div>
+
+            <!-- Mentalidad de crecimiento -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[token--mind] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">
+                Mentalidad de crecimiento
+              </p>
+            </div>
+
+            <!-- Emprendimiento creativo -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[streamline--business-idea-money] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">
+                Emprendimiento creativo
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+</MainLayout>

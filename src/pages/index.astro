@@ -1,51 +1,113 @@
 ---
-import '../styles/global.css';
+import "../styles/global.css";
 
-import MainLayout from '../layouts/MainLayout.astro';
+import MainLayout from "../layouts/MainLayout.astro";
 const title = "Portafolio web";
 ---
 
 <MainLayout title={title}>
-  <section id="miportafolio" class="bg-black text-center w-full h-screen flex flex-col items-center justify-center py-10 px-4 sm:px-8">
-    <div class="max-w-4xl w-full flex flex-col gap-8 items-center justify-center">
-      <div class="flex flex-col-reverse sm:flex-row items-center justify-center gap-6 ">
+  <section
+    id="miportafolio"
+    class="bg-black text-center w-full h-screen flex flex-col items-center justify-center py-10 px-4 sm:px-8"
+  >
+    <div
+      class="max-w-4xl w-full flex flex-col gap-8 items-center justify-center"
+    >
+      <div
+        class="flex flex-col-reverse sm:flex-row items-center justify-center gap-6"
+      >
         <h2 class="text-4xl sm:text-5xl font-bold text-white">
           Hola, soy Ivan Cruz y construyo páginas web
         </h2>
-        <img 
+        <img
           src="https://avatars.githubusercontent.com/u/157653669?s=400&u=883ac80aa9d82dd7d1b3eaa81fa500ca2060640f&v=4"
-          alt="Foto de perfil" 
+          alt="Foto de perfil"
           class="w-36 h-36 rounded-full"
         />
       </div>
-      
+
       <p class="text-lg sm:text-xl text-white font-light text-center">
-        Soy un <span class="font-semibold">Desarrollador Web Frontend Jr</span> con una gran pasión por la <span class="font-semibold">tecnología</span>. Me encanta <span class="font-semibold">crear interfaces atractivas, modernas, funcionales y optimizadas</span> utilizando <span class="font-semibold">tecnologías actuales y eficaces</span> para <span class="font-semibold">mejorar la experiencia del usuario</span>. Estoy en <span class="font-semibold">constante aprendizaje</span> para perfeccionar mis <span class="font-semibold">habilidades profesionales y personales</span>.
+        Soy un <span class="font-semibold">Desarrollador Web Frontend Jr</span> con
+        una gran pasión por la <span class="font-semibold">tecnología</span>. Me
+        encanta <span class="font-semibold"
+          >crear interfaces atractivas, modernas, funcionales y optimizadas</span
+        > utilizando <span class="font-semibold"
+          >tecnologías actuales y eficaces</span
+        > para <span class="font-semibold"
+          >mejorar la experiencia del usuario</span
+        >. Estoy en <span class="font-semibold">constante aprendizaje</span> para
+        perfeccionar mis <span class="font-semibold"
+          >habilidades profesionales y personales</span
+        >.
       </p>
-  
+
       <div class="flex flex-wrap gap-6 justify-center">
-        <a href="https://github.com/ivandevI9" target="_blank" class="text-white flex items-center gap-2 text-lg hover:text-gray-300 transition-colors">
-          <span class="icon-[mdi--github]" role="img" aria-hidden="true" /> GitHub  <span class="icon-[material-symbols--arrow-outward-rounded]" role="img" aria-hidden="true" />
+        <a
+          href="https://github.com/ivandevI9"
+          target="_blank"
+          class="text-white flex items-center gap-2 text-lg hover:text-gray-300 transition-colors"
+        >
+          <span class="icon-[mdi--github]" role="img" aria-hidden="true"></span>
+          GitHub <span
+            class="icon-[material-symbols--arrow-outward-rounded]"
+            role="img"
+            aria-hidden="true"></span>
         </a>
-        <a href="https://www.linkedin.com/in/ivan-cruz-1906mx/" target="_blank" class="text-white flex items-center gap-2 text-lg hover:text-gray-300 transition-colors">
-          <span class="icon-[mdi--linkedin]" role="img" aria-hidden="true" /> LinkedIn <span class="icon-[material-symbols--arrow-outward-rounded]" role="img" aria-hidden="true" />
+        <a
+          href="https://www.linkedin.com/in/ivan-cruz-1906mx/"
+          target="_blank"
+          class="text-white flex items-center gap-2 text-lg hover:text-gray-300 transition-colors"
+        >
+          <span class="icon-[mdi--linkedin]" role="img" aria-hidden="true"
+          ></span> LinkedIn <span
+            class="icon-[material-symbols--arrow-outward-rounded]"
+            role="img"
+            aria-hidden="true"></span>
         </a>
-        <a href="https://app.aluracursos.com/user/ivanmx19" target="_blank" class="text-white flex items-center gap-2 text-lg hover:text-gray-300 transition-colors">
-          <span class="icon-[ls--a]" role="img" aria-hidden="true" /> Alura <span class="icon-[material-symbols--arrow-outward-rounded]" role="img" aria-hidden="true" />
+        <a
+          href="https://app.aluracursos.com/user/ivanmx19"
+          target="_blank"
+          class="text-white flex items-center gap-2 text-lg hover:text-gray-300 transition-colors"
+        >
+          <span class="icon-[ls--a]" role="img" aria-hidden="true"></span> Alura
+          <span
+            class="icon-[material-symbols--arrow-outward-rounded]"
+            role="img"
+            aria-hidden="true"></span>
         </a>
-        <a href="https://discord.com/users/ivandev19" target="_blank" class="text-white flex items-center gap-2 text-lg hover:text-gray-300 transition-colors">
-          <span class="icon-[line-md--discord]" role="img" aria-hidden="true" /> Discord <span class="icon-[material-symbols--arrow-outward-rounded]" role="img" aria-hidden="true" />
+        <a
+          href="https://discord.com/users/ivandev19"
+          target="_blank"
+          class="text-white flex items-center gap-2 text-lg hover:text-gray-300 transition-colors"
+        >
+          <span class="icon-[line-md--discord]" role="img" aria-hidden="true"
+          ></span> Discord <span
+            class="icon-[material-symbols--arrow-outward-rounded]"
+            role="img"
+            aria-hidden="true"></span>
         </a>
-        <a href="https://x.com/IvandevI9" target="_blank" class="text-white flex items-center gap-2 text-lg hover:text-gray-300 transition-colors">
-          <span class="icon-[akar-icons--x-fill]" role="img" aria-hidden="true" /> <span class="icon-[material-symbols--arrow-outward-rounded]" role="img" aria-hidden="true" />
+        <a
+          href="https://x.com/IvandevI9"
+          target="_blank"
+          class="text-white flex items-center gap-2 text-lg hover:text-gray-300 transition-colors"
+        >
+          <span class="icon-[akar-icons--x-fill]" role="img" aria-hidden="true"
+          ></span>
+          <span
+            class="icon-[material-symbols--arrow-outward-rounded]"
+            role="img"
+            aria-hidden="true"></span>
         </a>
       </div>
-  
+
       <!-- CV download button -->
-      <a href="/cv.pdf" download class="w-48 sm:w-60 text-white bg-red-500 py-2 px-4 rounded-md text-center font-bold hover:bg-red-600 transition-colors">
+      <a
+        href="/cv.pdf"
+        download
+        class="w-48 sm:w-60 text-white bg-red-500 py-2 px-4 rounded-md text-center font-bold hover:bg-red-600 transition-colors"
+      >
         Descargar CV
       </a>
     </div>
-   
   </section>
 </MainLayout>

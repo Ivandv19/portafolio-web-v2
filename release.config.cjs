@@ -1,8 +1,8 @@
 module.exports = {
   branches: [
-    'main',
-    { name: 'develop', prerelease: true },
-    { name: 'next', channel: 'beta', prerelease: 'beta' },
+    "main",
+    { name: "develop", prerelease: true },
+    { name: "next", channel: "beta", prerelease: "beta" },
   ],
   repositoryUrl: "https://github.com/Ivandv19/portafolio-web-v2.git",
   plugins: [
@@ -25,7 +25,8 @@ module.exports = {
       "@semantic-release/git",
       {
         assets: ["CHANGELOG.md", "package.json", "pnpm-lock.yaml"],
-        message: "chore(release): 🔖 Versión ${nextRelease.version}\n\n${nextRelease.notes}",
+        message:
+          "chore(release): 🔖 Versión ${nextRelease.version}\n\n${nextRelease.notes}",
       },
     ],
   ],

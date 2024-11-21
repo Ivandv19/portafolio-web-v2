@@ -1,25 +1,39 @@
 ---
-const year = new Date().getFullYear();  // Obtiene el año actual para mostrarlo dinámicamente
+const year = new Date().getFullYear(); // Obtiene el año actual para mostrarlo dinámicamente
 ---
 
-<footer class="bg-black text-white p-4 ">
-  <div class="max-w-screen-xl mx-auto text-center ">
-    <p class="text-sm">© {year} Desarrollado por Ivan Cruz. <br> Todos los derechos reservados.</p>
+<footer class="bg-black text-white p-4">
+  <div class="max-w-screen-xl mx-auto text-center">
+    <p class="text-sm">
+      © {year} Desarrollado por Ivan Cruz. <br /> Todos los derechos reservados.
+    </p>
 
     <!-- Marcas / Tecnologías -->
     <div class="flex justify-center mt-4 gap-8">
       <!-- Astro logo -->
-      <span class="icon-[devicon--astro] text-2xl" role="img" aria-hidden="true"></span>
+      <span class="icon-[devicon--astro] text-2xl" role="img" aria-hidden="true"
+      ></span>
       <!-- React logo -->
-      <span class="icon-[devicon--react] text-2xl" role="img" aria-hidden="true"></span>
+      <span class="icon-[devicon--react] text-2xl" role="img" aria-hidden="true"
+      ></span>
       <!-- Tailwind logo -->
-      <span class="icon-[devicon--tailwindcss] text-2xl" role="img" aria-hidden="true"></span>
-        <!-- Netlify -->
-        <span class="icon-[devicon--netlify] text-2xl" role="img" aria-hidden="true" />
+      <span
+        class="icon-[devicon--tailwindcss] text-2xl"
+        role="img"
+        aria-hidden="true"></span>
+      <!-- Netlify -->
+      <span
+        class="icon-[devicon--netlify] text-2xl"
+        role="img"
+        aria-hidden="true"></span>
       <!-- GitHub logo -->
-      <span class="icon-[mdi--github] text-2xl" role="img" aria-hidden="true"></span>
+      <span class="icon-[mdi--github] text-2xl" role="img" aria-hidden="true"
+      ></span>
       <!-- VS logo -->
-      <span class="icon-[devicon--vscode] text-2xl" role="img" aria-hidden="true"></span>
+      <span
+        class="icon-[devicon--vscode] text-2xl"
+        role="img"
+        aria-hidden="true"></span>
     </div>
   </div>
 </footer>
