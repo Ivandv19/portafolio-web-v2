@@ -4,6 +4,124 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout title={title}>
-  <h2>¡Hola! Bienvenido a mi sitio web</h2>
-  <p>Este es el contenido principal de la página de inicio.</p>
+  <!-- Contenedor de la sección "Skills" -->
+  <section
+    id="skills"
+    class="pt-[19vh] px-0 bg-gray-200 text-center flex flex-col items-center w-full h-[100vh] justify-start "
+  >
+    <!-- Hobbies -->
+    <div class="w-full flex flex-col justify-center items-center">
+      <h3 class="text-2xl font-semibold text-gray-700">Hobbies</h3>
+      <div class="grid gap-8 mt-8 w-4/5 flex flex-col">
+        <!-- Frontend Básico -->
+        <section class="w-full">
+          <div
+            class="grid gap-8 mt-4 w-full"
+            style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));"
+          >
+            <!-- Tocar piano -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[material-symbols-light--piano] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">Tocar piano</p>
+            </div>
+
+            <!-- Visitar museos-->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[proicons--museum] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">Visitar museos</p>
+            </div>
+
+            <!-- Aprender nuevas tecnologías -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[material-symbols-light--code-blocks-outline-sharp] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">
+                Aprender nuevas tecnologías
+              </p>
+            </div>
+
+            <!-- Jugar videojuegos -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[maki--gaming] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">
+                Jugar videojuegos
+              </p>
+            </div>
+
+            <!-- Escuchar música -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[mdi-light--music] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">
+                Escuchar música
+              </p>
+            </div>
+
+            <!-- Ver series y películas -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[fluent--movies-and-tv-16-regular] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">
+                Ver series y películas
+              </p>
+            </div>
+
+            <!-- Practicar deportes -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[material-symbols--sports] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">
+                Practicar deportes
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
 </MainLayout>
