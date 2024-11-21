@@ -1,3 +1,11 @@
+# [1.9.0-develop.1](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.8.0...v1.9.0-develop.1) (2024-11-21)
+
+
+### Features
+
+* agrega rama develop ([f47420c](https://github.com/Ivandv19/portafolio-web-v2/commit/f47420c522afb22f18880d5c1bb1561d821c77be))
+* **ci:** agrega nueva rama de desarrollo ([3dfaccb](https://github.com/Ivandv19/portafolio-web-v2/commit/3dfaccb5f4935c56ef972e038677d4d15859391b))
+
 # [1.8.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.7.0...v1.8.0) (2024-11-21)
 
 
