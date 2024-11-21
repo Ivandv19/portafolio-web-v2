@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.6.0...v1.7.0) (2024-11-21)
+
+
+### Features
+
+* **skills:** agrega skills ([4d625af](https://github.com/Ivandv19/portafolio-web-v2/commit/4d625afa0da7acd2f7d4c9f9db26fe2dd2169382))
+
 # [1.6.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.5.0...v1.6.0) (2024-11-20)
 
 ### Features
