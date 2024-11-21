@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.9.0...v1.10.0) (2024-11-21)
+
+
+### Features
+
+* **hobbies:** agrega información ([8c62833](https://github.com/Ivandv19/portafolio-web-v2/commit/8c6283352aa5b0af9710e61f2219a3b2183bfe4c))
+
 # [1.9.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.8.0...v1.9.0) (2024-11-21)
 
 
