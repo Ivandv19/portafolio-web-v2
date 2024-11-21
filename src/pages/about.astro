@@ -4,6 +4,60 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout title={title}>
-  <h2>¡Hola! Bienvenido a mi sitio web</h2>
-  <p>Este es el contenido principal de la página de inicio.</p>
+  <section
+    id="sobremi"
+    class="pt-[19vh] px-0 bg-gray-200 text-center flex flex-col items-center w-full h-[100vh] justify-start"
+  >
+    <div class="max-w-3xl flex flex-col gap-5">
+      <!-- Título con barra animada -->
+      <div class="flex flex-col items-center">
+        <h2 class="text-4xl md:text-5xl font-bold text-primary relative">
+          Sobre Mí
+          <span
+            class="absolute bottom-[-5px] left-1/2 w-0 h-[2px] bg-secondary transition-all duration-400 ease-in-out hover:w-full hover:left-0"
+          ></span>
+        </h2>
+      </div>
+
+      <!-- Texto descriptivo -->
+      <p
+        class="text-center text-background leading-7 md:leading-8 text-base md:text-lg"
+      >
+        Soy <span class="text-primary font-bold">Ivan Cruz</span>, tengo
+        <span class="text-primary font-bold">22 años</span> y soy de
+        <span class="text-primary font-bold">Chimalhuacán, Edomex, México</span
+        >. Desde muy pequeño, me interesé en el mundo de la
+        <span class="text-primary font-bold">tecnología</span>. Cursé la
+        <span class="text-primary font-bold">preparatoria</span> en una
+        <span class="text-primary font-bold">carrera técnica</span> que me proporcionó
+        las
+        <span class="text-primary font-bold">bases de la informática</span>. Sin
+        embargo,
+        <span class="text-primary font-bold">la pandemia</span> me llevó a
+        <span class="text-primary font-bold">dejar la universidad</span>, lo que
+        me impulsó hacia un
+        <span class="text-primary font-bold">aprendizaje autodidacta</span>.
+        <br /><br />
+        Decidí inscribirme en <span class="text-primary font-bold"
+          >cursos especializados</span
+        > en
+        <span class="text-primary font-bold">desarrollo frontend</span> de páginas
+        web, lo que me permitió conocer diversos
+        <span class="text-primary font-bold"
+          >conceptos, técnicas y tecnologías</span
+        > enfocadas en el desarrollo web.
+        <span class="text-primary font-bold"
+          >conceptos, técnicas y tecnologías</span
+        > enfocadas en el desarrollo web. <br /><br /> Además, tuve la oportunidad
+        de
+        <span class="text-primary font-bold">crear varios proyectos</span>, lo
+        que me brindó
+        <span class="text-primary font-bold">valiosa experiencia</span> en el campo.
+        Actualmente, estoy en
+        <span class="text-primary font-bold">busca de oportunidades</span> para entrar
+        al
+        <span class="text-primary font-bold">mercado laboral</span>.
+      </p>
+    </div>
+  </section>
 </MainLayout>
