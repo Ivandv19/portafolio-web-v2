@@ -1,6 +1,6 @@
 module.exports = {
   branches: [
-    "main",
+    "develop",
   ],
   repositoryUrl: "https://github.com/Ivandv19/portafolio-web-v2.git",
   plugins: [
