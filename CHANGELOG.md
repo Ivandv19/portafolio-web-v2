@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.11.0...v1.12.0) (2024-11-22)
+
+
+### Features
+
+* **experiencia:** agrega contenido ([6e2b2dd](https://github.com/Ivandv19/portafolio-web-v2/commit/6e2b2ddac4bb6532507682c34d15e69ceabb506f))
+
 # [1.11.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.10.0...v1.11.0) (2024-11-21)
 
 
