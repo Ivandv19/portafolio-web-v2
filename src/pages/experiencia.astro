@@ -4,6 +4,28 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout title={title}>
-  <h2>¡Hola! Bienvenido a mi sitio web</h2>
-  <p>Este es el contenido principal de la página de inicio.</p>
+  
+  <section id="experiencia" class="pt-[19vh] px-0 bg-gray-200 text-center flex flex-col items-center w-full h-[100vh] justify-start">
+    <h2 class="text-4xl text-primary relative mb-5 group hover:text-primary">
+      Experiencia
+      <span class="absolute bottom-[-5px] left-1/2 w-0 h-[2px] bg-secondary group-hover:w-full group-hover:left-0 transition-all ease-in-out duration-400"></span>
+    </h2>
+  
+    <div class="text-background text-center leading-6 max-w-3xl">
+      <p class="text-base sm:text-lg md:text-xl">
+        Actualmente, <span class="font-bold text-primary">no tengo experiencia laboral</span> formal en el sector, pero he
+        <span class="font-bold text-primary">trabajado</span> en varios
+        <span class="font-bold text-primary">proyectos</span> que
+        <span class="font-bold text-primary">demuestran</span> mis
+        <span class="font-bold text-primary">habilidades técnicas</span>. Estos
+        <span class="font-bold text-primary">proyectos</span>, que se describen a
+        <span class="font-bold text-primary">continuación</span>, reflejan mi
+        <span class="font-bold text-primary">capacidad</span> para
+        <span class="font-bold text-primary">aplicar</span> lo
+        <span class="font-bold text-primary">aprendido</span> y
+        <span class="font-bold text-primary">desarrollar soluciones efectivas</span>.
+      </p>
+    </div>
+  </section>
+
 </MainLayout>
