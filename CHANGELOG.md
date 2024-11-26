@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.13.0...v1.14.0) (2024-11-26)
+
+
+### Features
+
+* **contacto:** agrega información ([33d348d](https://github.com/Ivandv19/portafolio-web-v2/commit/33d348d671d83a35fc56ef559b1cf53d389cdb9c))
+
 # [1.13.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.12.0...v1.13.0) (2024-11-26)
 
 
