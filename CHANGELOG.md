@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.14.0...v1.15.0) (2024-11-26)
+
+
+### Features
+
+* agrega cv ([4e7d946](https://github.com/Ivandv19/portafolio-web-v2/commit/4e7d946479f0f4a217b72cb2dae29f4e37a55947))
+
 # [1.14.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.13.0...v1.14.0) (2024-11-26)
 
 
