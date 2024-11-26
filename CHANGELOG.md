@@ -1,3 +1,15 @@
+# [1.13.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.12.0...v1.13.0) (2024-11-26)
+
+
+### Bug Fixes
+
+* arregla claves de acceso a la api de Github ([c61d91e](https://github.com/Ivandv19/portafolio-web-v2/commit/c61d91e5e7b51aa8971741854189d6b37c2d0d57))
+
+
+### Features
+
+* **proyectos:** agrega contenido de página ([e561aea](https://github.com/Ivandv19/portafolio-web-v2/commit/e561aea76d38094f2c8bc32f3dbe315d4d801047))
+
 # [1.12.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.11.0...v1.12.0) (2024-11-22)
 
 
