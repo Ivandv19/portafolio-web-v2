@@ -72,12 +72,6 @@ jobs:
         run: |
           gcloud config set project "portafolio-web-v2"
 
-      - name: Install Google Cloud SDK (if needed)
-        run: |
-          curl https://sdk.cloud.google.com | bash
-          source $HOME/google-cloud-sdk/path.bash.inc
-        if: runner.os == 'Linux'
-
       - name: Fetch secrets from Google Secret Manager
         run: |
           SECRET_GH_TOKEN=$(gcloud secrets versions access latest --secret="GH_TOKEN")
