@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.15.0...v1.16.0) (2024-11-27)
+
+
+### Features
+
+* agrega componente titulo ([dc109a0](https://github.com/Ivandv19/portafolio-web-v2/commit/dc109a010156255fe131f294e0a05376691a1d4f))
+
 # [1.15.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.14.0...v1.15.0) (2024-11-26)
 
 
