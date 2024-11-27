@@ -13,7 +13,7 @@ import MainLayout from "../layouts/MainLayout.astro";
     <!-- Sección para habilidades técnicas -->
     <div class="w-full flex flex-col justify-center items-center">
       <Titulo text="Habilidades Técnicas" />
-      <div class="grid gap-8 mt-8 w-4/5 ">
+      <div class="grid gap-8 mt-8 w-4/5">
         <!-- Frontend Básico -->
         <section class="w-full">
           <h4 class="text-lg font-semibold text-gray-600 mb-4">
@@ -88,9 +88,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 
         <!-- Bibliotecas de UI -->
         <div class="w-full">
-          <h4 class="text-lg font-semibold text-gray-600 mb-4">
-            Bibliotecas de UI
-          </h4>
+          <h4 class="text-lg font-semibold text-gray-600 mb-4">Librerías UI</h4>
           <div
             class="grid gap-8 mt-4 w-full"
             style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));"
@@ -110,10 +108,10 @@ import MainLayout from "../layouts/MainLayout.astro";
           </div>
         </div>
 
-        <!-- Herramientas de Empaque y Construcción -->
+        <!-- Herramientas de desarrollo -->
         <section class="w-full">
           <h4 class="text-lg font-semibold text-gray-600 mb-4">
-            Herramientas de Empaque y Construcción
+            Herramienta de desarrollo
           </h4>
           <div
             class="grid gap-8 mt-4 w-full"
@@ -209,10 +207,10 @@ import MainLayout from "../layouts/MainLayout.astro";
           </div>
         </section>
 
-        <!-- APIs y Protocolos -->
+        <!-- Consumo de APIs -->
         <section class="w-full">
           <h4 class="text-lg font-semibold text-gray-600 mb-4">
-            APIs y Protocolos
+            Consumo de APIs
           </h4>
           <div
             class="grid gap-8 mt-4 w-full"
@@ -228,20 +226,7 @@ import MainLayout from "../layouts/MainLayout.astro";
                   role="img"
                   aria-hidden="true"></i>
               </div>
-              <p class="text-lg font-bold text-gray-800">RESTful API</p>
-            </div>
-
-            <!-- JSON -->
-            <div
-              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
-            >
-              <div>
-                <i
-                  class="icon-[codicon--json] text-5xl"
-                  role="img"
-                  aria-hidden="true"></i>
-              </div>
-              <p class="text-lg font-bold text-gray-800">JSON</p>
+              <p class="text-lg font-bold text-gray-800">RESTful APIs</p>
             </div>
           </div>
         </section>
@@ -287,9 +272,9 @@ import MainLayout from "../layouts/MainLayout.astro";
           </div>
         </section>
 
-        <!-- UI Tools -->
+        <!-- librerías UI -->
         <section class="w-full mt-8">
-          <h4 class="text-lg font-semibold text-gray-600 mb-4">UI Tools</h4>
+          <h4 class="text-lg font-semibold text-gray-600 mb-4">Librerías UI</h4>
           <div
             class="grid gap-8 mt-4 w-full"
             style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));"
@@ -307,6 +292,30 @@ import MainLayout from "../layouts/MainLayout.astro";
               <p class="text-lg font-bold text-gray-800">Tailwind CSS</p>
             </div>
 
+            <!-- Material UI -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[mdi--material-ui] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">Material UI</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Gestores de Estado -->
+        <section class="w-full mt-8">
+          <h4 class="text-lg font-semibold text-gray-600 mb-4">
+            Gestores de Estado
+          </h4>
+          <div
+            class="grid gap-8 mt-4 w-full"
+            style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));"
+          >
             <!-- Redux -->
             <div
               class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
@@ -318,6 +327,43 @@ import MainLayout from "../layouts/MainLayout.astro";
                   aria-hidden="true"></i>
               </div>
               <p class="text-lg font-bold text-gray-800">Redux</p>
+            </div>
+
+            <!-- Zustand -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[icon-park-outline--bear] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">Zustand</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Consumo de APIs -->
+        <section class="w-full">
+          <h4 class="text-lg font-semibold text-gray-600 mb-4">
+            Consumo de APIs
+          </h4>
+          <div
+            class="grid gap-8 mt-4 w-full"
+            style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));"
+          >
+            <!-- GraphQL -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[mdi--graphql] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">GraphQL</p>
             </div>
           </div>
         </section>
@@ -420,6 +466,30 @@ import MainLayout from "../layouts/MainLayout.astro";
           </div>
         </section>
 
+        <!-- Herramientas de Inteligencia Artificial -->
+        <section class="w-full mt-8">
+          <h4 class="text-lg font-semibold text-gray-600 mb-4">
+            Herramientas de Inteligencia Artificial
+          </h4>
+          <div
+            class="grid gap-8 mt-4 w-full"
+            style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));"
+          >
+            <!-- ChatGPT -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[arcticons--openai-chatgpt] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">ChatGPT</p>
+            </div>
+          </div>
+        </section>
+
         <!-- Cloud Computing -->
         <section class="w-full mt-8">
           <h4 class="text-lg font-semibold text-gray-600 mb-4">
@@ -439,9 +509,7 @@ import MainLayout from "../layouts/MainLayout.astro";
                   role="img"
                   aria-hidden="true"></i>
               </div>
-              <p class="text-lg font-bold text-gray-800">
-                OCI (Oracle Cloud Infrastructure)
-              </p>
+              <p class="text-lg font-bold text-gray-800">Oracle Cloud (OCI)</p>
             </div>
 
             <!-- Google Cloud -->
