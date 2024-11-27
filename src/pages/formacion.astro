@@ -1,24 +1,20 @@
 ---
 const title = "Formacion";
+import Titulo from "../components/Titulo.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout title={title}>
   <section
     id="formacion"
-    class="pt-[19vh] px-0 bg-gray-200 text-center flex flex-col items-center w-full h-[100vh] justify-start"
+    class="pt-[10vh] px-0 bg-gray-200 text-center flex flex-col items-center w-full h-[100vh] justify-start"
   >
-    <h2 class="text-4xl text-primary relative mb-5 group hover:text-primary">
-      Formación
-      <span
-        class="absolute bottom-[-5px] left-1/2 w-0 h-[2px] bg-secondary group-hover:w-full group-hover:left-0 transition-all ease-in-out duration-400"
-      ></span>
-    </h2>
+    <Titulo text="Formación" />
 
     <div class="flex flex-col gap-5">
       <ul class="list-none p-0">
         <li
-          class="flex flex-col items-center justify-center gap-2 text-lg text-[#34495e] mb-5 md:gap-4 md:mb-5 flex-col"
+          class="flex flex-col items-center justify-center gap-2 text-lg text-[#34495e] mb-5 md:gap-4 md:mb-5"
         >
           <span
             class="icon-[lsicon--education-outline]"
@@ -32,7 +28,7 @@ import MainLayout from "../layouts/MainLayout.astro";
         </li>
 
         <li
-          class="flex flex-col items-center justify-center gap-2 text-lg text-[#34495e] mb-5 md:gap-4 md:mb-5 flex-col"
+          class="flex flex-col items-center justify-center gap-2 text-lg text-[#34495e] mb-5 md:gap-4 md:mb-5"
         >
           <span class="icon-[si-glyph--code]" role="img" aria-hidden="true"
           ></span>

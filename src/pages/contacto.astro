@@ -1,19 +1,22 @@
 ---
 const title = "Contacto";
+import Titulo from "../components/Titulo.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout title={title}>
-  <div class="pt-[19vh] px-0 bg-gray-200 text-center flex flex-col items-center w-full h-[100vh] justify-start  ">
-    <h2 class="text-3xl font-semibold mb-4">Contacto</h2>
+  <div
+    class="pt-[10vh] px-0 bg-gray-200 text-center flex flex-col items-center w-full h-[100vh] justify-start"
+  >
+    <Titulo text="Contacto" />
     <p class="text-lg mb-2">
       Correo electrónico: <a
         href="mailto:ivangtx19@gmail.com"
-        class="text-blue-600">ivangtx19@gmail.com</a>
+        class="text-blue-600">ivangtx19@gmail.com</a
+      >
     </p>
     <p class="text-lg mb-2">
       Número de teléfono: <span class="text-blue-600">+52 5650853599</span>
     </p>
-    
   </div>
 </MainLayout>

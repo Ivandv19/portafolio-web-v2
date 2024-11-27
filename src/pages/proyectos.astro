@@ -2,15 +2,18 @@
 const title = "Proyectos";
 import MainLayout from "../layouts/MainLayout.astro";
 import ProyectosReact from "../components/ProyectosReact.jsx";
+import Titulo from "../components/Titulo.astro";
 ---
 
 <MainLayout title={title}>
   <section
     id="proyectos"
-    class="py-16 bg-white text-center flex justify-center items-center flex-col space-y-12 w-full"
+    class="pt-[10vh] bg-white text-center flex justify-center items-center flex-col w-full"
   >
-    <h2 class="text-4xl font-bold text-primary">Proyectos</h2>
-    <p class="text-gray-600 py-16"> Aquí puedes ver algunos de mis proyectos destacados.</p>
+    <Titulo text="Proyectos" />
+    <p class="text-gray-600 py-10 text-base sm:text-lg">
+      Aquí puedes ver algunos de mis proyectos destacados.
+    </p>
     <!-- Isla de React -->
     <ProyectosReact client:load />
   </section>

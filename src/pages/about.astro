@@ -1,27 +1,21 @@
 ---
 const title = "Sobre Mi";
 import MainLayout from "../layouts/MainLayout.astro";
+import Titulo from "../components/Titulo.astro";
 ---
 
 <MainLayout title={title}>
   <section
     id="sobremi"
-    class="pt-[19vh] px-0 bg-gray-200 text-center flex flex-col items-center w-full h-[100vh] justify-start"
+    class="pt-[10vh] px-0 bg-gray-200 text-center flex flex-col items-center w-full h-[100vh] justify-start"
   >
     <div class="max-w-3xl flex flex-col gap-5">
-      <!-- Título con barra animada -->
       <div class="flex flex-col items-center">
-        <h2 class="text-4xl md:text-5xl font-bold text-primary relative">
-          Sobre Mí
-          <span
-            class="absolute bottom-[-5px] left-1/2 w-0 h-[2px] bg-secondary transition-all duration-400 ease-in-out hover:w-full hover:left-0"
-          ></span>
-        </h2>
+        <Titulo text="Sobre Mí" />
       </div>
-
       <!-- Texto descriptivo -->
       <p
-        class="text-center text-background leading-7 md:leading-8 text-base md:text-lg"
+        class="text-center text-background leading-7 md:leading-8 text-base text-base"
       >
         Soy <span class="text-primary font-bold">Ivan Cruz</span>, tengo
         <span class="text-primary font-bold">22 años</span> y soy de

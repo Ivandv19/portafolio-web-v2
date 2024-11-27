@@ -1,5 +1,6 @@
 ---
 const title = "Skills";
+import Titulo from "../components/Titulo.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
@@ -7,12 +8,12 @@ import MainLayout from "../layouts/MainLayout.astro";
   <!-- Contenedor de la sección "Skills" -->
   <section
     id="skills"
-    class="py-20 bg-white text-center flex flex-col justify-center items-center gap-12"
+    class="bg-white text-center flex flex-col justify-center items-center gap-12 pt-[10vh]"
   >
     <!-- Sección para habilidades técnicas -->
     <div class="w-full flex flex-col justify-center items-center">
-      <h3 class="text-2xl font-semibold text-gray-700">Habilidades Técnicas</h3>
-      <div class="grid gap-8 mt-8 w-4/5 flex flex-col">
+      <Titulo text="Habilidades Técnicas" />
+      <div class="grid gap-8 mt-8 w-4/5 ">
         <!-- Frontend Básico -->
         <section class="w-full">
           <h4 class="text-lg font-semibold text-gray-600 mb-4">
@@ -249,10 +250,8 @@ import MainLayout from "../layouts/MainLayout.astro";
 
     <!-- Sección para habilidades técnicas en desarrollo -->
     <div class="w-full flex flex-col justify-center items-center">
-      <h3 class="text-2xl font-semibold text-gray-700">
-        Habilidades Técnicas en desarrollo
-      </h3>
-      <div class="grid gap-8 mt-8 w-4/5 flex flex-col">
+      <Titulo text="Habilidades Técnicas en Desarrollo" />
+      <div class="grid gap-8 mt-8 w-4/5">
         <!-- Frameworks -->
         <section class="w-full mt-8">
           <h4 class="text-lg font-semibold text-gray-600 mb-4">Frameworks</h4>
@@ -529,8 +528,8 @@ import MainLayout from "../layouts/MainLayout.astro";
 
     <!-- Sección para habilidades blandas -->
     <div class="w-full flex flex-col justify-center items-center">
-      <h3 class="text-2xl font-semibold text-gray-700">Habilidades Blandas</h3>
-      <div class="grid gap-8 mt-8 w-4/5 flex flex-col">
+      <Titulo text="Habilidades Blandas" />
+      <div class="grid gap-8 mt-8 w-4/5">
         <section class="w-full mt-8">
           <div
             class="grid gap-8 mt-4 w-full"
