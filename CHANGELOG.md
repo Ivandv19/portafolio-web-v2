@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.17.1...v1.18.0) (2024-11-29)
+
+
+### Features
+
+* **proyectos:** muestra titulo del proyecto y nombre del repo ([67f2fd4](https://github.com/Ivandv19/portafolio-web-v2/commit/67f2fd4e61d6cb806c8fd5758eb6991ac7874f99))
+
 ## [1.17.1](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.17.0...v1.17.1) (2024-11-29)
 
 
