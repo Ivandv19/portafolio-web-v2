@@ -1,3 +1,10 @@
+## [1.17.1](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.17.0...v1.17.1) (2024-11-29)
+
+
+### Bug Fixes
+
+* **about:** corrige texto duplicado, mejora semántica y accesibilidad ([f32b516](https://github.com/Ivandv19/portafolio-web-v2/commit/f32b516d56052557837809d55f38f7e9e1487909))
+
 # [1.17.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.16.0...v1.17.0) (2024-11-27)
 
 
