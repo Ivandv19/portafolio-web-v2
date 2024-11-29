@@ -7,7 +7,7 @@ const ProyectosReact = () => {
     const [reposEnPortafolio, setReposEnPortafolio] = useState([]); // Solo los repositorios con la sección de "Proyecto En Portafolio Web"
     const username = "Ivandv19"; // Nombre de usuario de GitHub
     const githubToken = import.meta.env.PUBLIC_GITHUB_TOKEN_API; // Token de GitHub desde las variables de entorno
-    
+
 
     // useEffect que se ejecuta cuando el componente se monta
     useEffect(() => {
@@ -59,67 +59,76 @@ const ProyectosReact = () => {
                                 throw new Error("No se encontró README.");
                             }
 
-                            // Parseamos el contenido del README
-                            const readmeData = await readmeResponse.json();
-                            const encodedContent = readmeData.content;
-                            const cleanedBase64 = encodedContent.replace(/[\n\r]/g, ''); // Limpiamos los saltos de línea
-                            const decodedContent = new TextDecoder().decode(Uint8Array.from(atob(cleanedBase64), c => c.charCodeAt(0))); // Decodificamos el contenido base64
+                            // Parseamos el contenido del archivo README del repositorio
+                            const readmeData = await readmeResponse.json(); // Obtenemos la respuesta en formato JSON
+                            const encodedContent = readmeData.content; // Extraemos el contenido codificado en Base64
+                            const cleanedBase64 = encodedContent.replace(/[\n\r]/g, ''); // Limpiamos los saltos de línea del contenido Base64
+                            const decodedContent = new TextDecoder().decode(Uint8Array.from(atob(cleanedBase64), c => c.charCodeAt(0))); // Decodificamos el contenido Base64 a texto legible
 
-                            // Verificamos si el repositorio contiene la sección de "Proyecto En Portafolio Web"
-                            const projectKeywordMatch = decodedContent.match(/##\s*Proyecto En Portafolio Web/i);
-                            const isProjectInPortfolio = projectKeywordMatch ? true : false;
+                            // Verificamos si el repositorio contiene la sección "Proyecto En Portafolio Web" en el README
+                            const projectKeywordMatch = decodedContent.match(/##\s*Proyecto En Portafolio Web/i); // Busca la sección exacta "Proyecto En Portafolio Web"
+                            const isProjectInPortfolio = projectKeywordMatch ? true : false; // Si se encuentra la sección, es un proyecto en el portafolio
 
-                            // Si el repositorio tiene la sección "Proyecto En Portafolio Web", extraemos la descripción y tecnologías
+                            // Si el repositorio tiene la sección "Proyecto En Portafolio Web", extraemos la información relevante
                             if (isProjectInPortfolio) {
 
+                                // Extraemos el título (el primer encabezado de nivel 1)
+                                const titleMatch = decodedContent.match(/^#\s*(.*)/); // Busca el primer encabezado de nivel 1
+                                const title = titleMatch ? titleMatch[1].trim() : "No especificado"; // Extrae el título del primer encabezado o "No especificado" si no existe
+
+                                // Extraemos el número de la sección "Proyecto En Portafolio Web"
                                 const ordenMatch = decodedContent.match(/## Proyecto En Portafolio Web ##(\d+)/);  // Buscar el número después de "## Proyecto En Portafolio Web ##"
-                                const orden = ordenMatch ? parseInt(ordenMatch[1], 10) : null;  // Devuelve el número o null si no se encuentra
+                                const orden = ordenMatch ? parseInt(ordenMatch[1], 10) : null;  // Devuelve el número de orden o null si no se encuentra
 
-                                const descriptionMatch = decodedContent.match(/##\s*Descripción\n([\s\S]*?)(?=\n##|$)/i);
-                                const descripcionReadme = descriptionMatch ? descriptionMatch[1].trim() : "No especificado";
+                                // Extraemos la descripción del proyecto
+                                const descriptionMatch = decodedContent.match(/##\s*Descripción\n([\s\S]*?)(?=\n##|$)/i); // Busca la sección de "Descripción"
+                                const descripcionReadme = descriptionMatch ? descriptionMatch[1].trim() : "No especificado"; // Extrae el texto de la descripción o "No especificado" si no existe
 
-                                const technologiesMatch = decodedContent.match(/##\s*Tecnologías\s*Utilizadas\s*\n([\s\S]*?)(?=\n##|$)/i);
+                                // Extraemos las tecnologías utilizadas
+                                const technologiesMatch = decodedContent.match(/##\s*Tecnologías\s*Utilizadas\s*\n([\s\S]*?)(?=\n##|$)/i); // Busca la sección de "Tecnologías Utilizadas"
                                 const technologies = technologiesMatch
                                     ? technologiesMatch[1]
-                                        .split("\n")
-                                        .filter((line) => line.startsWith("-"))
-                                        .map((line) => line.replace("- ", "").trim())
-                                    : ["No especificado"];
+                                        .split("\n") // Separamos las líneas
+                                        .filter((line) => line.startsWith("-")) // Filtramos las líneas que empiezan con "-"
+                                        .map((line) => line.replace("- ", "").trim()) // Limpiamos los guiones y recortamos los espacios
+                                    : ["No especificado"]; // Si no se encuentra la sección, asignamos un valor por defecto
 
-                                const deploymentMatch = decodedContent.match(/##\s*Despliegue\s*\n([\s\S]*?)(?=\n##|$)/i);
+                                // Extraemos el enlace de despliegue (si existe)
+                                const deploymentMatch = decodedContent.match(/##\s*Despliegue\s*\n([\s\S]*?)(?=\n##|$)/i); // Busca la sección de "Despliegue"
                                 const deploymentLink = deploymentMatch
-                                    ? deploymentMatch[1].match(/(http[s]?:\/\/[^\s]+)/)
-                                    : null;
+                                    ? deploymentMatch[1].match(/(http[s]?:\/\/[^\s]+)/) // Busca un enlace HTTP
+                                    : null; // Si no se encuentra un enlace, es null
 
-
-
-                                const imagenMatch = decodedContent.match(/##\s*Imagen\s*\n([\s\S]*?)(?=\n##|$)/i);
+                                // Extraemos la URL de la imagen (si existe)
+                                const imagenMatch = decodedContent.match(/##\s*Imagen\s*\n([\s\S]*?)(?=\n##|$)/i); // Busca la sección de "Imagen"
                                 const imagen = imagenMatch
-                                    ? imagenMatch[1].match(/(http[s]?:\/\/[^\s]+)/)
-                                    : null;
+                                    ? imagenMatch[1].match(/(http[s]?:\/\/[^\s]+)/) // Busca una URL de imagen
+                                    : null; // Si no se encuentra, es null
 
-
-                                // Retornamos los detalles del repositorio
+                                // Retornamos los detalles extraídos del repositorio
                                 return {
-                                    ...repo,
-                                    orden,
-                                    descripcionReadme,
-                                    technologies,
-                                    deploymentLink: deploymentLink ? deploymentLink[0] : null,
-                                    imagen: imagen ? imagen[0] : null,
+                                    ...repo, // Conservamos la información básica del repositorio
+                                    title,
+                                    orden, // El número de orden del proyecto en el portafolio
+                                    descripcionReadme, // La descripción del proyecto
+                                    technologies, // Las tecnologías utilizadas
+                                    deploymentLink: deploymentLink ? deploymentLink[0] : null, // El enlace de despliegue (si existe)
+                                    imagen: imagen ? imagen[0] : null, // La URL de la imagen (si existe)
                                 };
                             } else {
-                                // Si el repositorio no tiene la sección "Proyecto En Portafolio Web", lo marcamos
-                                console.log(`El repositorio ${repo.name} no tiene la sección "Proyecto En Portafolio Web".`);
+
+                                // Retornamos los detalles del repositorio con valores predeterminados en lugar de los extraídos
                                 return {
-                                    ...repo,
-                                    orden: "no especificado",
-                                    descripcionReadme: "No disponible",
-                                    technologies: ["No especificado"],
-                                    deploymentLink: null,
-                                    imagen: null,
+                                    ...repo, // Conservamos la información básica del repositorio
+                                    title: "no especificado",
+                                    orden: "no especificado", // No hay un número de orden
+                                    descripcionReadme: "No disponible", // No hay descripción disponible
+                                    technologies: ["No especificado"], // No hay tecnologías especificadas
+                                    deploymentLink: null, // No hay enlace de despliegue
+                                    imagen: null, // No hay imagen
                                 };
                             }
+
 
                         } catch (error) {
                             // Si ocurre un error al obtener el README, lo manejamos aquí
@@ -138,7 +147,6 @@ const ProyectosReact = () => {
                 setReposEnPortafolio(reposOrdenados);
                 setRepos(reposWithDetails);
 
-
             } catch (error) {
                 // Si ocurre un error al obtener los repositorios, lo manejamos aquí
                 console.error("Error al cargar los repositorios:", error);
@@ -155,7 +163,8 @@ const ProyectosReact = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-10 max-w-[80%]">
             {reposEnPortafolio.map((repo) => (
                 <div key={repo.id} className="border p-4 rounded-lg shadow transition-transform duration-100 hover:scale-105 flex flex-col justify-between items-center h-auto">
-                    <h3 className="font-semibold text-lg">{repo.name}</h3>
+                    <h3 className="font-semibold text-lg">{repo.title}</h3>
+                    <h5 className="text-sm text-gray-600 py-2">{repo.name}</h5>
                     <p className="text-sm text-gray-600 py-2">{repo.descripcionReadme}</p>
                     <img src={repo.imagen} alt="Captura de pantalla" className="max-w-full h-auto border rounded-lg" />
                     <div className="mt-2">
