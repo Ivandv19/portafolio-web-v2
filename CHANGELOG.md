@@ -1,3 +1,11 @@
+## [1.18.2](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.18.1...v1.18.2) (2024-12-02)
+
+
+### Bug Fixes
+
+* **index:** arregla sombra del header ([9574901](https://github.com/Ivandv19/portafolio-web-v2/commit/95749014e7603cecb1c65f4599c87e35e96597c4))
+* **index:** Modificación para confirmar cambios de cherry-pick en develop ([77bb45d](https://github.com/Ivandv19/portafolio-web-v2/commit/77bb45d9ec535b161a5871437d7ae051e9e39a97))
+
 ## [1.18.1](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.18.0...v1.18.1) (2024-12-02)
 
 
