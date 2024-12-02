@@ -1,3 +1,10 @@
+## [1.18.1](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.18.0...v1.18.1) (2024-12-02)
+
+
+### Bug Fixes
+
+* **index:** arregla link de GitHub ([e8d58ff](https://github.com/Ivandv19/portafolio-web-v2/commit/e8d58ff22abae52fa1855e6a2498e16709687ade))
+
 # [1.18.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.17.1...v1.18.0) (2024-11-29)
 
 
