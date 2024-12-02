@@ -8,7 +8,6 @@ export default {
       colors: {
         'border-color': '#FF0000',
       },
-
       boxShadow: {
         custom: '0px -3px 15px 1px #FF0000',
       },
