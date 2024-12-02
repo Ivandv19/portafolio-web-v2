@@ -1,3 +1,10 @@
+## [1.18.3](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.18.2...v1.18.3) (2024-12-02)
+
+
+### Bug Fixes
+
+* **index:** arregla dirección de url de discord ([6801c0a](https://github.com/Ivandv19/portafolio-web-v2/commit/6801c0a9dd5f49355f84a57d47117bd80572b186))
+
 ## [1.18.2](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.18.1...v1.18.2) (2024-12-02)
 
 

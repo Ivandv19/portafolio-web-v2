@@ -1,7 +1,7 @@
 {
   "name": "portafolio-web-v2",
   "type": "module",
-  "version": "1.18.2",
+  "version": "1.18.3",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
