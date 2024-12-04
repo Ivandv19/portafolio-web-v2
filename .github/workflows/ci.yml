@@ -71,6 +71,7 @@ jobs:
           client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}  # Añadir el subscription-id
+          auth-type: 'SPN'  # Cambia a SPN si usas un Service Principal
 
       - name: Fetch secrets from Azure Key Vault
         run: |
