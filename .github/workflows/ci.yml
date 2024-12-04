@@ -63,15 +63,15 @@ jobs:
           echo "AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}"
           echo "AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}"
 
-      # Autenticación con Azure usando el Service Principal
-      - name: Azure login
-        uses: azure/login@v1
-        with:
-          client-id: ${{ secrets.AZURE_CLIENT_ID }}
-          client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
-          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}  # Añadir el subscription-id
-          auth-type: 'SPN'  # Cambia a SPN si usas un Service Principal
+     
+          - name: Azure login
+          uses: azure/login@v1
+          with:
+            client-id: ${{ secrets.AZURE_CLIENT_ID }}
+            client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
+            tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+            subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+            auth-type: 'SERVICE_PRINCIPAL'  # El tipo de autenticación correcto
 
       - name: Fetch secrets from Azure Key Vault
         run: |
