@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - develop
-      
 
 jobs:
   tests:
@@ -56,32 +55,24 @@ jobs:
         run: |
           pnpm install
 
-      - name: Crear archivo de credenciales JSON vacío
-        run: |
-          touch /tmp/credentials.json
+      # Autenticación con Azure usando el Service Principal
+      - name: Azure login
+        uses: azure/login@v1
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
 
-      - name: Decodificar y asignar valor del secreto de Google Cloud al archivo
+      - name: Fetch secrets from Azure Key Vault
         run: |
-          echo "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}" | base64 --decode > /tmp/credentials.json
+          SECRET_GH_TOKEN=$(az keyvault secret show --name GHTOKEN --vault-name portafoliowebv2-keyvault --query value -o tsv)
 
-      - name: Autenticar con Google Cloud
-        run: |
-          gcloud auth activate-service-account --key-file /tmp/credentials.json
+          echo "GHTOKEN=$SECRET_GH_TOKEN" >> $GITHUB_ENV
 
-      - name: Configurar el proyecto de Google Cloud
-        run: |
-          gcloud config set project "portafolio-web-v2"
-
-      - name: Fetch secrets from Google Secret Manager
-        run: |
-          SECRET_GH_TOKEN=$(gcloud secrets versions access latest --secret="GH_TOKEN")
-          SECRET_NPM_TOKEN=$(gcloud secrets versions access latest --secret="NPM_TOKEN")
-          echo "GH_TOKEN=$SECRET_GH_TOKEN" >> $GITHUB_ENV
-          echo "NPM_TOKEN=$SECRET_NPM_TOKEN" >> $GITHUB_ENV
 
       - name: Run Semantic Release
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GH_TOKEN: ${{ secrets.GHTOKEN }}
+
         run: |
           pnpm exec semantic-release
