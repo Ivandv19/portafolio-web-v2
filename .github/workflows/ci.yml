@@ -1,3 +1,4 @@
+
 name: CI Workflows
 
 on:
@@ -63,24 +64,23 @@ jobs:
           echo "AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}"
           echo "AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}"
 
-     
-          - name: Azure login
-          uses: azure/login@v1
-          with:
-            client-id: ${{ secrets.AZURE_CLIENT_ID }}
-            client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
-            tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-            subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-            auth-type: 'SERVICE_PRINCIPAL'  # El tipo de autenticación correcto
+      - name: Azure login
+        uses: azure/login@v1
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          auth-type: 'SERVICE_PRINCIPAL'  # El tipo de autenticación correcto
 
       - name: Fetch secrets from Azure Key Vault
         run: |
           SECRET_GH_TOKEN=$(az keyvault secret show --name GHTOKEN --vault-name portafoliowebv2-keyvault --query value -o tsv)
 
           echo "GHTOKEN=$SECRET_GH_TOKEN" >> $GITHUB_ENV
+
       - name: Run Semantic Release
         env:
           GH_TOKEN: ${{ secrets.GHTOKEN }}
         run: |
           pnpm exec semantic-release
-
