@@ -1,4 +1,3 @@
-
 name: CI Workflows
 
 on:
@@ -64,14 +63,16 @@ jobs:
           echo "AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}"
           echo "AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}"
 
-      - name: Azure login
+      # Azure Login
+      - name: Azure Login
         uses: azure/login@v1
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
-          client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-          auth-type: 'SERVICE_PRINCIPAL'  # El tipo de autenticación correcto
+          auth-type: 'OIDC'  # Usamos OIDC para autenticación sin secretos
+          enable-AzPSSession: false
+          environment: azurecloud
 
       - name: Fetch secrets from Azure Key Vault
         run: |
