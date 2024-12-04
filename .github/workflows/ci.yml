@@ -76,7 +76,6 @@ jobs:
           SECRET_GH_TOKEN=$(az keyvault secret show --name GHTOKEN --vault-name portafoliowebv2-keyvault --query value -o tsv)
 
           echo "GHTOKEN=$SECRET_GH_TOKEN" >> $GITHUB_ENV
-
       - name: Run Semantic Release
         env:
           GH_TOKEN: ${{ secrets.GHTOKEN }}
