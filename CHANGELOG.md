@@ -1,3 +1,10 @@
+# [1.20.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.19.0...v1.20.0) (2024-12-05)
+
+
+### Features
+
+* **skills:** agrega google cloud en skills ([f11ca8d](https://github.com/Ivandv19/portafolio-web-v2/commit/f11ca8d8b08f3a257560f4c09f2239ed65d9e046))
+
 # [1.19.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.18.3...v1.19.0) (2024-12-05)
 
 
