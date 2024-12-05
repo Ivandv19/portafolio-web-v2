@@ -6,29 +6,38 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 <MainLayout title={title}>
   <div
-    class="px-4 bg-gray-200 text-center flex flex-col items-center w-full h-[100vh] justify-center space-y-4"
+    class="bg-gray-200 sm:h-[100vh] h-full text-center flex flex-col justify-center items-center gap-12 py-[10vh]"
   >
-    <Titulo text="Contacto" />
+    <div class="sm:text-base text-[8vw]"><Titulo text="Contacto" /></div>
 
-    <p class="text-lg mb-4">
-      Correo electrónico: 
-      <a 
-        href="mailto:ivangtx19@gmail.com" 
-        class="text-blue-600 hover:text-blue-800" 
-        aria-label="Enviar correo a ivangtx19@gmail.com"
+    <div>
+      <p class=" mb-4 sm:text-base text-[5vw]">
+        Correo electrónico:
+        <a
+          href="mailto:ivangtx19@gmail.com"
+          class="text-blue-600 hover:text-blue-800"
+          aria-label="Enviar correo a ivangtx19@gmail.com"
+        >
+          ivangtx19@gmail.com
+        </a>
+      </p>
+      <span class=" text-gray-600 sm:text-base text-[3vw]"
+        >(Disponible para consultas o colaboraciones)</span
       >
-        ivangtx19@gmail.com
-      </a>
-    </p>
-    <span class="text-sm text-gray-600">(Disponible para consultas o colaboraciones)</span>
+    </div>
 
-    <p class="text-lg mb-4">
-      Número de teléfono: 
-      <span class="text-blue-600 hover:text-blue-800" aria-label="Llamar al número +52 5650853599">
-        +52 5650853599
-      </span>
-    </p>
-    <span class="text-sm text-gray-600">(Disponible para WhatsApp)</span>
-    
+    <div class="flex flex-col">
+      <p class="sm:text-base text-[5vw]">
+        Número de teléfono:
+       
+      </p>
+      <span
+      class="text-blue-600 hover:text-blue-800 mb-4"
+      aria-label="Llamar al número +52 5650853599"
+    >
+      +52 5650853599
+    </span>
+      <span class=" text-gray-600 sm:text-base text-[3vw]">(Disponible para WhatsApp)</span>
+    </div>
   </div>
 </MainLayout>

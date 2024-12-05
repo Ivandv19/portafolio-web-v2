@@ -6,7 +6,7 @@ import Footer from "../components/Footer.astro";
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="es" class="w-full h-full bg-black ">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/logomain.gif" />
@@ -20,9 +20,9 @@ import Footer from "../components/Footer.astro";
 
     <title>{title}</title>
   </head>
-  <body>
+  <body class="w-full h-auto bg-black ">
     <Header />
-    <main>
+    <main class="w-full h-full bg-black ">
       <slot />
     </main>
     <Footer />

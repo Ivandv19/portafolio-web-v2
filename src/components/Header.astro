@@ -2,90 +2,79 @@
 const title = "Mi Portafolio";
 ---
 
-<header class="bg-black text-white p-2 w-full text-sm border-b-[3px] border-[#FF0000] shadow-custom z-50 fixed">
-  <div class="flex justify-center items-center w-full">
-    <div class="grid grid-cols-[1fr,2fr,1fr] w-full">
-      <!-- Primera columna (Título) -->
-      <div class="flex justify-center items-center">
-        <picture>
-          <!-- Si el navegador soporta WebP, usará esta imagen -->
-          <source
-            srcset="/logo.webp"
-            type="image/webp"
-            class="w-[80px] h-[80px]"
-          />
-
-          <!-- Si no soporta WebP, usará esta imagen JPG -->
-          <img
-            src="/logo.png"
-            alt="Logo"
-            loading="lazy"
-            class="w-[80px] h-[80px]"
-          />
-        </picture>
-        <a href="/" class="hover:text-gray-400" aria-label="Ir al inicio"
-          >{title}</a
-        >
-      </div>
-
-      <!-- Segunda columna (Navegación) -->
-      <div class="flex justify-center items-center">
-        <nav aria-label="Navegación principal" role="navigation">
-          <ul class="flex justify-center items-center gap-2">
-            <li>
-              <a
-                href="/about"
-                class="hover:text-gray-400"
-                aria-label="Ver más sobre mí">Sobre mí</a
-              >
-            </li>
-            <li>
-              <a
-                href="/skills"
-                class="hover:text-gray-400"
-                aria-label="Ver mis habilidades">Skills</a
-              >
-            </li>
-            <li>
-              <a
-                href="/hobbies"
-                class="hover:text-gray-400"
-                aria-label="Ver mis hobbies">Hobbies</a
-              >
-            </li>
-            <li>
-              <a
-                href="/formacion"
-                class="hover:text-gray-400"
-                aria-label="Ver mi formación">Formación</a
-              >
-            </li>
-            <li>
-              <a
-                href="/experiencia"
-                class="hover:text-gray-400"
-                aria-label="Ver mi experiencia">Experiencia</a
-              >
-            </li>
-            <li>
-              <a
-                href="/proyectos"
-                class="hover:text-gray-400"
-                aria-label="Ver mis proyectos">Proyectos</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <!-- Tercera columna (Contacto) -->
-      <div class="flex justify-center items-center">
-        <a
-          href="/contacto"
-          class="hover:text-gray-400"
-          aria-label="Contactar conmigo">Contáctame</a
-        >
+<header class="bg-black text-white p-2 w-full text-sm border-b-[3px] border-[#FF0000] shadow-custom z-50 fixed sm:">
+  <div
+    class="flex flex-row-reverse sm:grid sm:grid-cols-[1fr,2fr,1fr] w-full justify-between px-5"
+  >
+    <!-- Primeras columnas (sin cambios) -->
+    <div class="flex justify-center items-center">
+      <!-- Logo y título -->
+      <picture>
+        <source srcset="/logo.webp" type="image/webp" class="w-[50px] h-[50px] sm:w-[80px] sm:h-[80px]" />
+        <img src="/logo.png" alt="Logo" loading="lazy" class="w-[50px] h-[50px] sm:w-[80px] sm:h-[80px]" />
+      </picture>
+      <a href="/" class="hover:text-gray-400 hidden sm:block" aria-label="Ir al inicio">{title}</a>
+    </div>
+    
+    <!-- Menú de navegación -->
+    <div class="flex justify-center items-center">
+      <!-- Menú en versión de escritorio (sin cambios) -->
+      <nav aria-label="Navegación principal" role="navigation" class="hidden sm:block">
+        <ul class="flex justify-center items-center gap-2">
+          <li><a href="/" class="hover:text-gray-400" aria-label="Ir al portafolio">Mi Portafolio</a></li>
+          <li><a href="/about" class="hover:text-gray-400" aria-label="Ver más sobre mí">Sobre mí</a></li>
+          <li><a href="/skills" class="hover:text-gray-400" aria-label="Ver mis habilidades">Skills</a></li>
+          <li><a href="/hobbies" class="hover:text-gray-400" aria-label="Ver mis hobbies">Hobbies</a></li>
+          <li><a href="/formacion" class="hover:text-gray-400" aria-label="Ver mi formación">Formación</a></li>
+          <li><a href="/experiencia" class="hover:text-gray-400" aria-label="Ver mi experiencia">Experiencia</a></li>
+          <li><a href="/proyectos" class="hover:text-gray-400" aria-label="Ver mis proyectos">Proyectos</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Menú hamburguesa para móviles -->
+      <div class="sm:hidden">
+        <button id="hamburger-icon" class="text-white" aria-label="Abrir menú">
+          <i class="icon-[iconamoon--menu-burger-horizontal]" role="img" aria-hidden="true"></i>
+        </button>
       </div>
     </div>
+    
+    <!-- Tercera columna (Contacto) -->
+    <div class=" sm:flex justify-center items-center hidden text-center">
+      <a href="/contacto" class="hover:text-gray-400 block sm:block " aria-label="Contactar conmigo">Contáctame</a>
+    </div>
+  </div>
+
+  <!-- Menú móvil (desplegable) -->
+  <div id="mobile-menu" class="sm:hidden hidden bg-black text-white p-4 absolute top-0 left-0 right-0 z-50 sm:text-base text-[3vw]">
+    <ul class="flex flex-col gap-2">
+      <li><a href="/" class="hover:text-gray-400">Mi Portafolio</a></li>
+      <li><a href="/about" class="hover:text-gray-400">Sobre mí</a></li>
+      <li><a href="/skills" class="hover:text-gray-400">Skills</a></li>
+      <li><a href="/hobbies" class="hover:text-gray-400">Hobbies</a></li>
+      <li><a href="/formacion" class="hover:text-gray-400">Formación</a></li>
+      <li><a href="/experiencia" class="hover:text-gray-400">Experiencia</a></li>
+      <li><a href="/proyectos" class="hover:text-gray-400">Proyectos</a></li>
+      <li><a href="/contacto" class="hover:text-gray-400">Contáctame</a></li>
+    </ul>
   </div>
 </header>
+
+<script>
+  // Seleccionamos el icono del menú y el menú móvil
+  const hamburgerIcon = document.getElementById("hamburger-icon");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  // Abrir y cerrar el menú cuando se hace clic en el ícono
+  hamburgerIcon.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+
+  // Cerrar el menú si se hace clic fuera del menú móvil
+  document.addEventListener("click", (e) => {
+    // Verificar si el clic no es dentro del menú ni del ícono hamburguesa
+    if (!mobileMenu.contains(e.target) && !hamburgerIcon.contains(e.target)) {
+      mobileMenu.classList.add("hidden");
+    }
+  });
+</script>

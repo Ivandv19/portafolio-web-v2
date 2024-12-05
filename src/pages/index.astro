@@ -8,7 +8,7 @@ const title = "Portafolio web";
 <MainLayout title={title}>
   <section
     id="miportafolio"
-    class="bg-black text-center w-full h-screen flex flex-col items-center justify-center py-10 px-4 sm:px-8"
+    class="bg-black text-center w-full sm:h-[100vh] h-full flex flex-col items-center justify-center sm:py-10 sm:px-4 pt-[25vw] pr-[1vh] pb-[10vw] pl-[1vh] "
   >
     <div
       class="max-w-4xl w-full flex flex-col gap-8 items-center justify-center"
@@ -16,17 +16,17 @@ const title = "Portafolio web";
       <div
         class="flex flex-col-reverse sm:flex-row items-center justify-center gap-6"
       >
-        <h2 class="text-4xl sm:text-5xl font-bold text-white">
+        <h2 class="text-4xl font-bold text-white sm:text-5xl text-[8vw]">
           Hola, soy Ivan Cruz y construyo páginas web
         </h2>
         <img
           src="https://avatars.githubusercontent.com/u/157653669?s=400&u=883ac80aa9d82dd7d1b3eaa81fa500ca2060640f&v=4"
           alt="Foto de perfil"
-          class="w-36 h-36 rounded-full"
+          class="sm:w-36 sm:h-36 rounded-full max-w-[40%] ;"
         />
       </div>
 
-      <p class="text-lg sm:text-xl text-white font-light text-center">
+      <p class="text-white font-light text-center sm:text-base text-[4vw]">
         Soy un <span class="font-semibold">Desarrollador Web Frontend Jr</span> apasionado
         por la <span class="font-semibold">tecnología</span>. Me encanta <span
           class="font-semibold"
@@ -53,19 +53,24 @@ const title = "Portafolio web";
           target="_blank"
           class="text-white flex items-center gap-2 text-lg hover:text-gray-300 transition-colors"
         >
-          <span class="icon-[mdi--github]" role="img" aria-hidden="true"></span>
-          GitHub <span
+          <i
+            class="icon-[mdi--github] sm:text-base text-[6vw]"
+            role="img"
+            aria-hidden="true"></i>
+          <p class="sm:text-base text-[4vw]">GitHub</p>
+          <i
             class="icon-[material-symbols--arrow-outward-rounded]"
             role="img"
-            aria-hidden="true"></span>
+            aria-hidden="true"></i>
         </a>
         <a
           href="https://www.linkedin.com/in/ivan-cruz-1906mx/"
           target="_blank"
           class="text-white flex items-center gap-2 text-lg hover:text-gray-300 transition-colors"
         >
-          <span class="icon-[mdi--linkedin]" role="img" aria-hidden="true"
-          ></span> LinkedIn <span
+          <i class="icon-[mdi--linkedin] sm:text-base text-[6vw]" role="img" aria-hidden="true"></i>
+          <p class="sm:text-base text-[4vw]" >LinkedIn</p>
+          <span
             class="icon-[material-symbols--arrow-outward-rounded]"
             role="img"
             aria-hidden="true"></span>
@@ -75,34 +80,36 @@ const title = "Portafolio web";
           target="_blank"
           class="text-white flex items-center gap-2 text-lg hover:text-gray-300 transition-colors"
         >
-          <span class="icon-[ls--a]" role="img" aria-hidden="true"></span> Alura
-          <span
+          <i class="icon-[ls--a] sm:text-base text-[5vw]" role="img" aria-hidden="true"></i>
+          <p class="sm:text-base text-[4vw]">Alura</p>
+          <i
             class="icon-[material-symbols--arrow-outward-rounded]"
             role="img"
-            aria-hidden="true"></span>
+            aria-hidden="true"></i>
         </a>
         <a
           href="https://discord.com/users/ivandv19"
           target="_blank"
           class="text-white flex items-center gap-2 text-lg hover:text-gray-300 transition-colors"
         >
-          <span class="icon-[line-md--discord]" role="img" aria-hidden="true"
-          ></span> Discord <span
+          <i class="icon-[line-md--discord] sm:text-base text-[6vw]" role="img" aria-hidden="true"></i>
+          <p class="sm:text-base text-[4vw]">Discord</p>
+          <i
             class="icon-[material-symbols--arrow-outward-rounded]"
             role="img"
-            aria-hidden="true"></span>
+            aria-hidden="true"></i>
         </a>
         <a
           href="https://x.com/IvandevI9"
           target="_blank"
           class="text-white flex items-center gap-2 text-lg hover:text-gray-300 transition-colors"
         >
-          <span class="icon-[akar-icons--x-fill]" role="img" aria-hidden="true"
-          ></span>
-          <span
+          <i class="icon-[akar-icons--x-fill] sm:text-base text-[6vw]" role="img" aria-hidden="true"
+          ></i>
+          <i
             class="icon-[material-symbols--arrow-outward-rounded]"
             role="img"
-            aria-hidden="true"></span>
+            aria-hidden="true"></i>
         </a>
       </div>
 
@@ -110,7 +117,7 @@ const title = "Portafolio web";
       <a
         href="/cv.pdf"
         download
-        class="w-48 sm:w-60 text-white bg-red-500 py-2 px-4 rounded-md text-center font-bold hover:bg-red-600 transition-colors"
+        class="w-48 sm:w-60 text-white bg-[#FF0000] py-2 px-4 rounded-md text-center font-bold hover:bg-red-500 transition-colors sm:text-base text-[4vw]"
       >
         Descargar CV
       </a>

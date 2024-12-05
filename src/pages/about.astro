@@ -7,15 +7,15 @@ import Titulo from "../components/Titulo.astro";
 <MainLayout title={title}>
   <section
     id="sobremi"
-    class="px-0 bg-gray-200 text-center flex flex-col items-center w-full h-[100vh] justify-center"
+    class=" bg-gray-200 sm:h-[100vh] h-full text-center flex flex-col justify-center items-center gap-12 py-[10vh] "
     aria-labelledby="sobremi-title"
   >
     <div class="max-w-3xl flex flex-col gap-5">
-      <div class="flex flex-col items-center">
+      <div class="flex flex-col items-center sm:text-base text-[8vw]">
         <Titulo id="sobremi-title" text="Sobre Mí" />
       </div>
       <!-- Texto descriptivo -->
-      <p class="text-center text-background leading-7 md:leading-8 text-base">
+      <p class="text-center text-background leading-7 md:leading-8 sm:text-base text-[3vw]">
         Soy <strong class="text-primary">Ivan Cruz</strong>, tengo
         <strong class="text-primary">22 años</strong> y soy de
         <strong class="text-primary">Chimalhuacán, Edomex, México</strong>.

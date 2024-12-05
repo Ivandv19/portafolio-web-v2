@@ -7,13 +7,17 @@ import MainLayout from "../layouts/MainLayout.astro";
 <MainLayout title={title}>
   <section
     id="experiencia"
-    class=" px-0 bg-gray-200 text-center flex flex-col items-center w-full h-[100vh] justify-center"
+    class=" bg-gray-200 sm:h-[100vh] h-full text-center flex flex-col justify-center items-center gap-12 py-[10vh]"
   >
-    <Titulo text="Experiencia" />
+    <div class="sm:text-base text-[8vw]">
+      <Titulo text="Experiencia" />
+    </div>
 
-    <div class="text-background text-center leading-6 max-w-3xl flex flex-col gap-10">
-      <p class="text-base sm:text-lg ">
-        Actualmente, <span class="font-bold text-primary"
+    <div
+      class="text-background text-center leading-6 max-w-3xl flex flex-col gap-10"
+    >
+      <p class="sm:text-base text-[3vw]">
+        Actualmente, <span class="font-bold text-primary "
           >no tengo experiencia laboral</span
         > formal en el sector, pero he
         <span class="font-bold text-primary">trabajado</span> en varios
@@ -33,7 +37,8 @@ import MainLayout from "../layouts/MainLayout.astro";
 
       <div>
         <a href="/proyectos">
-          <i class="icon-[maki--arrow] text-4xl" role="img" aria-hidden="true"></i>
+          <i class="icon-[maki--arrow] text-4xl" role="img" aria-hidden="true"
+          ></i>
         </a>
       </div>
     </div>

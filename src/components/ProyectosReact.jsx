@@ -160,9 +160,9 @@ const ProyectosReact = () => {
 
     return (
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-10 max-w-[80%]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:px-10 sm:max-w-[80%] w-full gap-20 ">
             {reposEnPortafolio.map((repo) => (
-                <div key={repo.id} className="border p-4 rounded-lg shadow transition-transform duration-100 hover:scale-105 flex flex-col justify-between items-center h-auto">
+                <div key={repo.id} className="border p-4 rounded-lg shadow transition-transform duration-100 hover:scale-105 flex flex-col justify-between items-center h-auto ">
                     <h3 className="font-semibold text-lg">{repo.title}</h3>
                     <h5 className="text-sm text-gray-600 py-2">{repo.name}</h5>
                     <p className="text-sm text-gray-600 py-2">{repo.descripcionReadme}</p>
