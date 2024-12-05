@@ -1,3 +1,23 @@
+# [1.19.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.18.3...v1.19.0) (2024-12-05)
+
+
+### Bug Fixes
+
+* **ci:** agrega paso de login ([d54c073](https://github.com/Ivandv19/portafolio-web-v2/commit/d54c0739592bb3e95c19db785436ff7b30346bc4))
+* **ci:** agrega paso de login ([ae6bb18](https://github.com/Ivandv19/portafolio-web-v2/commit/ae6bb186441b9a66610b9356d579cfe0b7f2746c))
+* **ci:** cambia a autenticación OIDC para evitar manejo de secretos ([ad8400f](https://github.com/Ivandv19/portafolio-web-v2/commit/ad8400f40156c936934377e4cbb244fcea5b69ec))
+* **ci:** cambia forma de autenticacion ([daf8671](https://github.com/Ivandv19/portafolio-web-v2/commit/daf8671e01f47ed2a6654d876cc600684f69f149))
+* **ci:** cambia metodo de autenticacion ([7fb4810](https://github.com/Ivandv19/portafolio-web-v2/commit/7fb4810cbace79cd69f5c42cdc4c1544ad19023a))
+* **ci:** cambia valores de los secretos de github ([da0174e](https://github.com/Ivandv19/portafolio-web-v2/commit/da0174e2b0a9240789becb9e722e659b1f9fde6b))
+* **ci:** corrige error de identacion ([732e04d](https://github.com/Ivandv19/portafolio-web-v2/commit/732e04d13f86062c9e8476acc1ce8cec03c6e939))
+* **ci:** hace log para verificar las credenciales ([bf70877](https://github.com/Ivandv19/portafolio-web-v2/commit/bf7087712db3c60c06c61725702703080cbdc6e2))
+* **ci:** regresa a Google Secret Manager ([1201e1a](https://github.com/Ivandv19/portafolio-web-v2/commit/1201e1a1ce605bbbe602a6af1e8e2a3726af805b))
+
+
+### Features
+
+* agrega Azure Key Vault para guardar variables de entorno ([238fc19](https://github.com/Ivandv19/portafolio-web-v2/commit/238fc19dccfc16d46abe03ee1a6ac936d7fffa19))
+
 ## [1.18.3](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.18.2...v1.18.3) (2024-12-02)
 
 
