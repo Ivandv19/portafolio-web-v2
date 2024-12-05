@@ -3,11 +3,7 @@ name: CI Workflows
 on:
   push:
     branches:
-      - develop  # o la rama en la que desees ejecutar el flujo
-
-permissions:
-  id-token: write  # Necesario para emitir el token OIDC
-  contents: read   # Necesario para acceder a los contenidos del repositorio
+      - develop
 
 jobs:
   tests:
@@ -36,6 +32,7 @@ jobs:
   semantic-release:
     runs-on: ubuntu-latest
     needs: tests
+
     permissions:
       contents: write
       id-token: write
@@ -58,28 +55,32 @@ jobs:
         run: |
           pnpm install
 
-      - name: Azure login with OIDC
-        uses: azure/login@v2
-        with:
-          client-id: ${{ secrets.AZURE_CLIENT_ID }}  # Asegúrate de haber creado este secreto en GitHub
-          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-
-      # Verificar secretos (opcional, solo para depuración)
-      - name: Verificar secretos
+      - name: Crear archivo de credenciales JSON vacío
         run: |
-          echo "AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}"
-          echo "AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}"
-          echo "AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}"
+          touch /tmp/credentials.json
 
-      # Fetch secrets from Azure Key Vault (si es necesario)
-      - name: Fetch secrets from Azure Key Vault
+      - name: Decodificar y asignar valor del secreto de Google Cloud al archivo
         run: |
-          SECRET_GH_TOKEN=$(az keyvault secret show --name GHTOKEN --vault-name portafoliowebv2-keyvault --query value -o tsv)
-          echo "GHTOKEN=$SECRET_GH_TOKEN" >> $GITHUB_ENV
+          echo "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}" | base64 --decode > /tmp/credentials.json
+
+      - name: Autenticar con Google Cloud
+        run: |
+          gcloud auth activate-service-account --key-file /tmp/credentials.json
+
+      - name: Configurar el proyecto de Google Cloud
+        run: |
+          gcloud config set project "portafolio-web-v2"
+
+      - name: Fetch secrets from Google Secret Manager
+        run: |
+          SECRET_GH_TOKEN=$(gcloud secrets versions access latest --secret="GH_TOKEN")
+          SECRET_NPM_TOKEN=$(gcloud secrets versions access latest --secret="NPM_TOKEN")
+          echo "GH_TOKEN=$SECRET_GH_TOKEN" >> $GITHUB_ENV
+          echo "NPM_TOKEN=$SECRET_NPM_TOKEN" >> $GITHUB_ENV
 
       - name: Run Semantic Release
         env:
-          GH_TOKEN: ${{ secrets.GHTOKEN }}  # Este es el token necesario para Semantic Release
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           pnpm exec semantic-release
