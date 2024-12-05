@@ -1,3 +1,10 @@
+# [1.21.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.20.0...v1.21.0) (2024-12-05)
+
+
+### Features
+
+* **experiencia:** agrega flecha para ir a página proyectos ([d8aea4d](https://github.com/Ivandv19/portafolio-web-v2/commit/d8aea4df5fdffa80c41766d20b8798c05fd46b82))
+
 # [1.20.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.19.0...v1.20.0) (2024-12-05)
 
 
