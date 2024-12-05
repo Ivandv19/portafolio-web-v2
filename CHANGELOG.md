@@ -1,3 +1,10 @@
+# [1.22.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.21.0...v1.22.0) (2024-12-05)
+
+
+### Features
+
+* agrega diseño responsive en toda la página ([96a6e4a](https://github.com/Ivandv19/portafolio-web-v2/commit/96a6e4adb7573f2477b837c784eb0fda1f543a15))
+
 # [1.21.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.20.0...v1.21.0) (2024-12-05)
 
 
