@@ -1,3 +1,10 @@
+## [1.22.1](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.22.0...v1.22.1) (2024-12-06)
+
+
+### Bug Fixes
+
+* **index:** corrige dirección de cv ([95c6f05](https://github.com/Ivandv19/portafolio-web-v2/commit/95c6f0539b0964557a9ed12d39920b2b645caa5c))
+
 # [1.22.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.21.0...v1.22.0) (2024-12-05)
 
 
