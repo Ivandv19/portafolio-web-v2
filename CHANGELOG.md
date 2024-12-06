@@ -1,3 +1,10 @@
+## [1.22.2](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.22.1...v1.22.2) (2024-12-06)
+
+
+### Bug Fixes
+
+* **header:** elimina dirección duplicada de página mi portafolio ([aff9043](https://github.com/Ivandv19/portafolio-web-v2/commit/aff9043b480b15d045824bc03c9dff22885559e8))
+
 ## [1.22.1](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.22.0...v1.22.1) (2024-12-06)
 
 
