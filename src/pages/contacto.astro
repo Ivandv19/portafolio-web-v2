@@ -11,33 +11,32 @@ import MainLayout from "../layouts/MainLayout.astro";
     <div class="sm:text-base text-[8vw]"><Titulo text="Contacto" /></div>
 
     <div>
-      <p class=" mb-4 sm:text-base text-[5vw]">
+      <p class="mb-4 sm:text-base text-[5vw]">
         Correo electrónico:
         <a
           href="mailto:ivangtx19@gmail.com"
           class="text-blue-600 hover:text-blue-800"
           aria-label="Enviar correo a ivangtx19@gmail.com"
         >
-          ivangtx19@gmail.com
+          <p class="mb-4">ivangtx19@gmail.com</p>
         </a>
       </p>
-      <span class=" text-gray-600 sm:text-base text-[3vw]"
+      <span class="text-gray-600 sm:text-base text-[3vw]"
         >(Disponible para consultas o colaboraciones)</span
       >
     </div>
 
     <div class="flex flex-col">
-      <p class="sm:text-base text-[5vw]">
-        Número de teléfono:
-       
-      </p>
+      <p class="mb-4 sm:text-base text-[5vw]">Número de teléfono:</p>
       <span
-      class="text-blue-600 hover:text-blue-800 mb-4"
-      aria-label="Llamar al número +52 5650853599"
-    >
-      +52 5650853599
-    </span>
-      <span class=" text-gray-600 sm:text-base text-[3vw]">(Disponible para WhatsApp)</span>
+        class="text-blue-600 hover:text-blue-800 mb-4"
+        aria-label="Llamar al número +52 5650853599"
+      >
+        +52 5650853599
+      </span>
+      <span class="text-gray-600 sm:text-base text-[3vw]"
+        >(Disponible para WhatsApp)</span
+      >
     </div>
   </div>
 </MainLayout>
