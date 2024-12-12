@@ -1,3 +1,10 @@
+# [1.23.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.22.2...v1.23.0) (2024-12-12)
+
+
+### Features
+
+* **skills:** agrega python y typescript en skills en desarrollo ([8e256c2](https://github.com/Ivandv19/portafolio-web-v2/commit/8e256c2fa0ab9f6a4385a319c5dfb7e431cebfd0))
+
 ## [1.22.2](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.22.1...v1.22.2) (2024-12-06)
 
 
