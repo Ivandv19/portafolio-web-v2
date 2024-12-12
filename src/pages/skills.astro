@@ -11,7 +11,9 @@ import MainLayout from "../layouts/MainLayout.astro";
     class="bg-white text-center flex flex-col justify-center items-center gap-12 py-[10vh]"
   >
     <!-- Sección para habilidades técnicas -->
-    <div class="w-full flex flex-col justify-center items-center sm:text-base text-[7vw]">
+    <div
+      class="w-full flex flex-col justify-center items-center sm:text-base text-[7vw]"
+    >
       <Titulo text="Habilidades Técnicas" />
       <div class="grid gap-8 mt-8 w-4/5">
         <!-- Frontend Básico -->
@@ -234,9 +236,46 @@ import MainLayout from "../layouts/MainLayout.astro";
     </div>
 
     <!-- Sección para habilidades técnicas en desarrollo -->
-    <div class="w-full flex flex-col justify-center items-center sm:text-base text-[7vw]">
+    <div
+      class="w-full flex flex-col justify-center items-center sm:text-base text-[7vw]"
+    >
       <Titulo text="Habilidades Técnicas en Desarrollo" />
       <div class="grid gap-8 mt-8 w-4/5">
+        <!-- Lenguajes de programación -->
+        <section class="w-full mt-8">
+          <h4 class="text-lg font-semibold text-gray-600 mb-4">Lenguajes de programación y superset's</h4>
+          <div
+            class="grid gap-8 mt-4 w-full"
+            style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));"
+          >
+            <!-- Python -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[proicons--python] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">Python</p>
+            </div>
+
+            <!-- Supersets -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[lineicons--typescript] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">TypeScript</p>
+            </div>
+          </div>
+        </section>
+
         <!-- Frameworks -->
         <section class="w-full mt-8">
           <h4 class="text-lg font-semibold text-gray-600 mb-4">Frameworks</h4>
@@ -525,18 +564,18 @@ import MainLayout from "../layouts/MainLayout.astro";
               <p class="text-lg font-bold text-gray-800">Azure</p>
             </div>
 
-             <!-- Google Cloud -->
-             <div
-             class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
-           >
-             <div>
-               <i
-                 class="icon-[mdi--google-cloud] text-5xl"
-                 role="img"
-                 aria-hidden="true"></i>
-             </div>
-             <p class="text-lg font-bold text-gray-800">Google Cloud</p>
-           </div>
+            <!-- Google Cloud -->
+            <div
+              class="bg-gray-100 p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform transform hover:scale-105"
+            >
+              <div>
+                <i
+                  class="icon-[mdi--google-cloud] text-5xl"
+                  role="img"
+                  aria-hidden="true"></i>
+              </div>
+              <p class="text-lg font-bold text-gray-800">Google Cloud</p>
+            </div>
 
             <!-- AWS -->
             <div
