@@ -1,3 +1,13 @@
+# [2.0.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.23.0...v2.0.0) (2024-12-12)
+
+
+* chore!: incrementa la versión mayor BREAKING CHANGE: Cambio forzado para iniciar la versión 2.0.0 ([67526f9](https://github.com/Ivandv19/portafolio-web-v2/commit/67526f9487ded6a6ec7c257a284d995adb339089))
+
+
+### BREAKING CHANGES
+
+* Cambio forzado para iniciar la versión 2.0.0
+
 # [1.23.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.22.2...v1.23.0) (2024-12-12)
 
 
