@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/Ivandv19/portafolio-web-v2/compare/v2.0.0...v2.0.1) (2024-12-12)
+
+
+### Bug Fixes
+
+* **contacto:** arregla número de teléfono ([9c8dad6](https://github.com/Ivandv19/portafolio-web-v2/commit/9c8dad6cb181b5db9a8069716defbdf803b14203))
+
 # [2.0.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v1.23.0...v2.0.0) (2024-12-12)
 
 
