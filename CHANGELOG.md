@@ -1,3 +1,12 @@
+# [2.1.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v2.0.1...v2.1.0) (2025-01-22)
+
+
+### Features
+
+* **skill:** agrega Vue.js como skill ([bc6028a](https://github.com/Ivandv19/portafolio-web-v2/commit/bc6028ae870ba6221d1b2e3fbbcc2fd5d8699dc7))
+* **skills:** agrega Angular como skill ([81f78ec](https://github.com/Ivandv19/portafolio-web-v2/commit/81f78ec65deabcb496820f04b6ebeb47c8fa7ab0))
+* **skills:** agrega apartado de bases de datos ([4ff53ca](https://github.com/Ivandv19/portafolio-web-v2/commit/4ff53caadfd5f649869751ad82c8fb353505aef6))
+
 ## [2.0.1](https://github.com/Ivandv19/portafolio-web-v2/compare/v2.0.0...v2.0.1) (2024-12-12)
 
 
