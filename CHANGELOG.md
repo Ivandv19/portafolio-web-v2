@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v2.1.0...v2.2.0) (2025-01-25)
+
+
+### Features
+
+* **skills:** agrega skill Github Copilot ([65ddfdd](https://github.com/Ivandv19/portafolio-web-v2/commit/65ddfdd3a19914eb089a32c5b794adeaca012cd2))
+
 # [2.1.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v2.0.1...v2.1.0) (2025-01-22)
 
 
