@@ -1,3 +1,10 @@
+## [2.4.1](https://github.com/Ivandv19/portafolio-web-v2/compare/v2.4.0...v2.4.1) (2025-02-15)
+
+
+### Bug Fixes
+
+* **proyectos:** arregla bug de proyectos que no se muestran ([811c76b](https://github.com/Ivandv19/portafolio-web-v2/commit/811c76b846c0e3e7e2e822f591bffc1b38565756))
+
 # [2.4.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v2.3.0...v2.4.0) (2025-02-15)
 
 
