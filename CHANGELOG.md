@@ -1,3 +1,10 @@
+# [2.4.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v2.3.0...v2.4.0) (2025-02-15)
+
+
+### Features
+
+* **skills:** agrega apartado de base de datos ([ae9b36a](https://github.com/Ivandv19/portafolio-web-v2/commit/ae9b36a450963e7f2c396f45f9a6a14582a5eee4))
+
 # [2.3.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v2.2.0...v2.3.0) (2025-02-15)
 
 
