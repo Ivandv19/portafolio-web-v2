@@ -1,3 +1,10 @@
+# [2.3.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v2.2.0...v2.3.0) (2025-02-15)
+
+
+### Features
+
+* agrega apartado de skills de backend ([199cb09](https://github.com/Ivandv19/portafolio-web-v2/commit/199cb09f6453b19144d8b999814ee6b593ce285f))
+
 # [2.2.0](https://github.com/Ivandv19/portafolio-web-v2/compare/v2.1.0...v2.2.0) (2025-01-25)
 
 
