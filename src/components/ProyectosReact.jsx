@@ -14,7 +14,7 @@ const ProyectosReact = () => {
         const fetchRepos = async () => {
             try {
                 // Hacemos una solicitud para obtener los repositorios públicos del usuario de GitHub
-                const reposResponse = await fetch(`https://api.github.com/users/${username}/repos`, {
+                const reposResponse = await fetch(`https://api.github.com/users/${username}/repos?per_page=100`, {
                     headers: {
                         Authorization: `Bearer ${githubToken}`
                     },
